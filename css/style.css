@@ -8,6 +8,9 @@ body {
     font-family: Raleway, sans-serif;
 }
 
+.modal-backdrop {
+    width: 100%;
+}
 
 .text-main-color-dark {
     color: var(--main-font-color);
@@ -30,6 +33,12 @@ body {
 .active-custom {
     background: #F15E25;
     color: #ffffff !important;
+}
+
+.navbar-visible {
+    position: absolute;
+    top: 0;
+    right: 50px;
 }
 
 @font-face {
