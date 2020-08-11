@@ -42,6 +42,9 @@ body {
     .money-w {
         font-weight: bold;
         font-size: 18px;
+        position: absolute;
+        top: -80px;
+        left: 67%;
     }
 
     .shadow-cust {
@@ -51,10 +54,70 @@ body {
     }
 }
 
+@media (max-width: 413px) {
+    .money-w {
+
+        left: 71%;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .money-w {
+
+        left: 69%;
+    }
+}
+
 .modal-backdrop {
     width: 100%;
 }
 
+.category-drp {
+    background: #ffffff;
+}
+
+.category-drp:hover {
+    background: #FDF5F1;
+    color: #f4875b;
+}
+
+#category-choose {
+    background: white url("../img/arrow-drp.svg") no-repeat 98%;
+    cursor: pointer;
+}
+
+#self-button {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+#self-button::before {
+    content: url("../img/before-dwn.svg");
+    width: 16px;
+    margin-right: 10px;
+}
+
+#self-button::after {
+    content: "Обзор";
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    bottom: 0;
+    z-index: 3;
+    width: 106px;
+    display: block;
+    height: 38px;
+    margin: 0 auto;
+    line-height: 1.5;
+    background: #EDEDED;
+    border-radius: 4px;
+    border: 1px solid #B1B1B1;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    color: #797979;
+}
 
 #dropdown-admin::after {
     content: none;
@@ -67,12 +130,12 @@ body {
 }
 
 #dropdown-buttons-hover .dropdown-item:hover {
-    background:  #FDF5F1;
+    background: #FDF5F1;
     border-left: 2px solid #F15E25;
     color: #f4875b;
 }
 
-#dropdown-type .drpdwn-btn{
+#dropdown-type .drpdwn-btn {
     border-radius: 4px !important;
     border: none !important;
     width: 160px !important;
@@ -113,6 +176,7 @@ body {
     top: 0;
     right: 50px;
 }
+
 .sort-span {
     display: flex;
     align-items: center;
@@ -156,6 +220,7 @@ body {
     url('../fonts/Raleway/Raleway-Thin.ttf') format('truetype')/* Safari, Android, iOS */
 
 }
+
 /* raleway-200 - latin_cyrillic */
 @font-face {
     font-family: 'Raleway';
@@ -165,6 +230,7 @@ body {
     src: local(''),
     url('../fonts/Raleway/Raleway-ExtraLight.ttf') format('truetype')/* Safari, Android, iOS */
 }
+
 /* raleway-300 - latin_cyrillic */
 @font-face {
     font-family: 'Raleway';
@@ -174,6 +240,7 @@ body {
     src: local(''),
     url('../fonts/Raleway/Raleway-Light.ttf') format('truetype')/* Safari, Android, iOS */
 }
+
 /* raleway-regular - latin_cyrillic */
 @font-face {
     font-family: 'Raleway';
@@ -183,6 +250,7 @@ body {
     src: local(''),
     url('../fonts/Raleway/Raleway-Regular.ttf') format('truetype')/* Safari, Android, iOS */
 }
+
 /* raleway-500 - latin_cyrillic */
 @font-face {
     font-family: 'Raleway';
@@ -192,6 +260,7 @@ body {
     src: local(''),
     url('../fonts/Raleway/Raleway-Medium.ttf') format('truetype')/* Safari, Android, iOS */
 }
+
 /* raleway-600 - latin_cyrillic */
 @font-face {
     font-family: 'Raleway';
@@ -201,6 +270,7 @@ body {
     src: local(''),
     url('../fonts/Raleway/Raleway-SemiBold.ttf') format('truetype')/* Safari, Android, iOS */
 }
+
 /* raleway-700 - latin_cyrillic */
 @font-face {
     font-family: 'Raleway';
@@ -210,6 +280,7 @@ body {
     src: local(''),
     url('../fonts/Raleway/Raleway-Bold.ttf') format('truetype')/* Safari, Android, iOS */
 }
+
 /* raleway-800 - latin_cyrillic */
 @font-face {
     font-family: 'Raleway';
@@ -219,6 +290,7 @@ body {
     src: local(''),
     url('../fonts/Raleway/Raleway-ExtraBold.ttf') format('truetype')/* Safari, Android, iOS */
 }
+
 /* raleway-900 - latin_cyrillic */
 @font-face {
     font-family: 'Raleway';
