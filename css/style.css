@@ -120,6 +120,10 @@ body {
     .pos-for-btn {
         position: relative !important;
     }
+
+    .carousel-control-prev {
+        visibility: hidden;
+    }
 }
 
 @media (max-width: 413px) {
@@ -477,6 +481,12 @@ body {
 .pos-for-btn {
     position: absolute;
     top: 0; right: 0;
+}
+
+.change-btn-eff {
+    background: #FDF5F1;
+    border-left: 2px solid #F15E25;
+    color: #f4875b;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
