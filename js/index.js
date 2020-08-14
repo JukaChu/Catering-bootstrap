@@ -155,16 +155,12 @@ let elForTabs = '<div class="col-12 p-lg-0 p-md-0 box-shadow-container position-
 
 
 let weekDayLink = [...document.querySelectorAll('.day-of-week')];
-console.log(weekDayLink);
 let currentDayWeekYear = new Date();
 let currentDay = currentDayWeekYear.getDate();
 let currentMonth = currentDayWeekYear.getMonth() + 1;
 let currentYear = currentDayWeekYear.getFullYear();
-console.log(currentDay, currentMonth, currentYear);
 
 weekDayLink.forEach((day, index) => {
-    console.log(index);
-    let indexArray = 0;
     let dayOfWeek = [...day.getElementsByClassName('day-of')];
     let numberOfDay = [...day.getElementsByClassName('number-of')];
     let rusDay = [...day.getElementsByClassName('month-rus')];
