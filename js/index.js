@@ -169,6 +169,7 @@ weekDayLink.forEach((day, index) => {
 
     if (currentMonth > weeks[index].month) {
         day.classList.add('day-of-week__past');
+        day.classList.add('disabled');
         if (String(weeks[index].month).length === 1) {
             monthLabel += weeks[index].month;
         } else {
@@ -177,6 +178,7 @@ weekDayLink.forEach((day, index) => {
     } else {
         if (currentDay > weeks[index].day) {
             day.classList.add('day-of-week__past');
+            day.classList.add('disabled');
             if (String(weeks[index].month).length === 1) {
                 monthLabel += weeks[index].month;
             } else {

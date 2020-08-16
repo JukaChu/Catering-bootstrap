@@ -375,6 +375,7 @@ body {
 }
 
 .child-inputs {
+    font-family: Open-Sans, sans-serif;
     -moz-appearance: textfield;
     height: 34px;
     border: 1px solid #B1B1B1;
@@ -385,6 +386,31 @@ body {
     display: inline-block;
     max-width: 231px;
     min-width: 200px;
+    flex-grow: 1;
+}
+
+.hover-el-report {
+    border-top: 2px solid transparent;
+    transition: 0.2s ease-in-out;
+
+}
+
+.hover-el-report:hover {
+    border-top: 2px solid #36C233;
+    transition: 0.2s ease-in-out;
+}
+
+.inputs-report {
+    font-family: Open-Sans, sans-serif;
+    -moz-appearance: textfield;
+    height: 34px;
+    border: 1px solid #B1B1B1;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 10px;
+    width: 100%;
+    display: inline-block;
+    max-width: 120px;
     flex-grow: 1;
 }
 
@@ -489,15 +515,31 @@ body {
     color: #f4875b;
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator {
+.link-back {
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in-out;
+}
+
+.link-back:hover {
+    border-bottom: 2px solid #F05E25;
+    transition: 0.2s ease-in-out;
+}
+
+.child-inputs::-webkit-calendar-picker-indicator {
     color: rgba(0, 0, 0, 0);
     opacity: 1;
     display: block;
-    background: url('../img/calendar-icon.svg') no-repeat;
-    width: 20px;
-    height: 20px;
+    background: url('../img/calendar-icon.svg') no-repeat center;
+    width: 22px;
+    height: 22px;
     border-width: thin;
 }
+.inputs-report::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    display: none;
+}
+
+
 
 @font-face {
     font-family: 'Open-Sans';
