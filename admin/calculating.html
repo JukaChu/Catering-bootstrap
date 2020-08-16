@@ -7,7 +7,7 @@
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/custom-select.css">
-    <title>Кабачок - Потреби у продуктах</title>
+    <title>Кабачок - Калькуляційна карта</title>
 </head>
 <body style="display: flex; flex-direction: column; min-height: 100%">
 <header>
@@ -89,7 +89,7 @@
             <div class="col-12 col-xl-5 col-md-9 col-sm-12 align-content-center mr-md-auto pl-0"><a
                     class="h2 h2-mob d-flex align-items-center " href="./report.html"
                     style="font-weight: 600; color: #232323; text-decoration: none; ">
-                <img src="../img/back-report.svg" class="mr-3" alt="">Потреба у продуктах
+                <img src="../img/back-report.svg" class="mr-3" alt="">Калькуляційна карта
             </a></div>
         </div>
         <div class="row mx-0 justify-content-center">
@@ -98,283 +98,352 @@
                 <div class="col-12 px-0 d-flex mb-3">
                     <div class="col-4 col-sm-3 col-lg-2 col-md-2 pl-0"><img src="../img/start-img.png" style="width: inherit" alt="Report image"></div>
                     <div class="col-sm-7 col-8 col-md-10 col-lg-10 d-flex flex-column justify-content-lg-center justify-content-md-center pl-0 pl-lg-3 pl-md-3">
-                        <span style="font-weight: 500; font-size: 18px; color: #000000">Потреба в продуктах / прогноз по днях</span>
+                        <span style="font-weight: 500; font-size: 18px; color: #000000">Меню</span>
                         <span style="font-size: 14px; color: #797979; font-family: Open-Sans, sans-serif">Дата: 08.08.2020</span>
                     </div>
                 </div>
 
-                <div class="col-12  px-0 ml-0 mr-0 justify-content-start w-100 align-content-center d-lg-flex d-none d-md-flex d-sm-none mt-3"
-                     style="height: 40px; font-weight: 500; font-size: 18px; color: #232323; background: #F7F7F7;">
-                    <div class="col-2 d-flex align-items-center" style="cursor: pointer"><span>Назва</span></div>
-                    <div class="col-4 d-flex align-items-center" style="cursor: pointer"><span>Залишок на початок</span></div>
-                    <div class="col-2 d-flex align-items-center" style="cursor: pointer"><span>Потреба</span></div>
-                    <div class="col-3 d-flex align-items-center" style="cursor: pointer"><span>Залишок на кiнець</span></div>
-                    <div class="col-1 d-flex align-items-center pl-0" style="cursor: pointer"><span>Од. вим.</span></div>
 
 
-                </div>
+                <div class="row mx-0 justify-content-start w-100 align-content-center mt-2">
+                    <div class="col-12 p-0  mt-2 d-flex flex-column box-shadow-container mt-4">
+                        <div class="col-12  d-flex flex-column brd-bot-line">
+                            <span class="h3 pt-lg-0 pt-md-0 pt-3" style="font-weight: 600; font-size: 18px; color: #232323">Котлета по-київські</span>
+                            <span class="h4 font-italic d-flex align-items-center pb-2 pb-lg-0 pb-md-0 " style="font-size: 14px; line-height: 16px; color: #797979;"><img src="../img/arrow-right.svg" class="d-md-block d-lg-block d-none mr-1" alt="Arrow right">Котлета по-київські</span>
+                        </div>
+                        <div class="col-12  px-0 ml-0 mr-0 justify-content-start w-100 align-content-center d-lg-flex d-none d-md-flex d-sm-none mt-3"
+                             style="height: 40px; font-weight: 500; font-size: 18px; color: #232323; background: #F7F7F7;">
+                            <div class="col-1 d-flex align-items-center" style="cursor: pointer"><span>№</span></div>
+                            <div class="col-4 d-flex align-items-center" style="cursor: pointer"><span>Найменування продуктів</span></div>
+                            <div class="col-2 d-flex align-items-center" style="cursor: pointer"><span>Од.вим.</span></div>
+                            <div class="col-1 d-flex align-items-center" style="cursor: pointer"><span>Нетто</span></div>
+                            <div class="col-1 d-flex align-items-center justify-content-start pr-0" style="cursor: pointer"><span>Брутто</span></div>
+                            <div class="col-2 d-flex align-items-center justify-content-center" style="cursor: pointer"><span>Ціна</span></div>
+                            <div class="col-1 d-flex align-items-center pl-0" style="cursor: pointer"><span>Сума</span></div>
 
-                <div class="row mx-0 justify-content-start w-100 align-content-center">
-                    <div class="col-12 p-0  mt-2">
-                        <div class="col-12 p-0 d-flex box-shadow-container brd-bot-line mb-3 mb-lg-0 mb-md-0"
+
+                        </div>
+                        <div class="col-12 p-0 d-flex  brd-bot-line mb-lg-0 mb-md-0"
                              style="min-height: 52px; color: #232323">
                             <div class="col-12 p-0  d-flex flex-lg-row flex-md-row flex-column align-items-center my-2 my-lg-0 my-my-0">
-                                <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1"
+                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1"
                                      style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Назва:</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0">Title</span>
+                                                                   style="font-size: 14px; font-weight: bold">№</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0" style="font-family: Open-Sans, sans-serif">99999</span>
                                 </div>
                                 <div class="col-md-4 col-lg-4 col-12 d-flex justify-content-between mt-1"
                                      style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Залишок на початок:</span><span
+                                                                   style="font-size: 14px; font-weight: bold">Найменування продуктів:</span><span
                                         class="col-lg-12 col-md-12 col-6 p-0"
-                                        style="font-family: Open-Sans, sans-serif">0.00</span>
+                                        style="">Title</span>
                                 </div>
                                 <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1"
                                      style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Потреба:</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0">Title</span>
+                                                                   style="font-size: 14px; font-weight: bold">Од.вим.</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0">кг</span>
                                 </div>
-                                <div class="col-md-3 col-lg-3 col-12 d-flex justify-content-between mt-1"
+                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1"
                                      style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Залишок на кінець:</span><span
+                                                                   style="font-size: 14px; font-weight: bold">Нетто</span><span
                                         class="col-lg-12 col-md-12 col-6 p-0"
                                         style="font-family: Open-Sans, sans-serif">0.00</span>
                                 </div>
+                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1"
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">Брутто</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0 d-flex justify-content-start" style="font-family: Open-Sans, sans-serif;">0.00</span>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1 "
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">Ціна</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0 d-flex justify-content-md-center justify-content-lg-center" style="font-family: Open-Sans, sans-serif;">0.00</span>
+                                </div>
                                 <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1 pl-md-0 pl-lg-0"
                                      style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Од. вим.</span><span
+                                                                   style="font-size: 14px; font-weight: bold">Сума</span><span
                                         class="col-lg-12 col-md-12 col-6 p-0">кг</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 p-0 d-flex box-shadow-container brd-bot-line mb-3 mb-lg-0 mb-md-0"
+                        <div class="col-12 p-0 d-none d-md-flex d-lg-flex  brd-bot-line mb-lg-0 mb-md-0"
                              style="min-height: 52px; color: #232323">
                             <div class="col-12 p-0  d-flex flex-lg-row flex-md-row flex-column align-items-center my-2 my-lg-0 my-my-0">
-                                <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1"
+                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1"
                                      style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Назва:</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0">Title</span>
+                                                                   style="font-size: 14px; font-weight: bold">№</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0" style="font-family: Open-Sans, sans-serif">99999</span>
                                 </div>
                                 <div class="col-md-4 col-lg-4 col-12 d-flex justify-content-between mt-1"
                                      style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Залишок на початок:</span><span
+                                                                   style="font-size: 14px; font-weight: bold">Найменування продуктів:</span><span
                                         class="col-lg-12 col-md-12 col-6 p-0"
-                                        style="font-family: Open-Sans, sans-serif">0.00</span>
+                                        style="">Title</span>
                                 </div>
                                 <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1"
                                      style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Потреба:</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0">Title</span>
+                                                                   style="font-size: 14px; font-weight: bold">Од.вим.</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0">кг</span>
                                 </div>
-                                <div class="col-md-3 col-lg-3 col-12 d-flex justify-content-between mt-1"
+                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1"
                                      style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Залишок на кінець:</span><span
+                                                                   style="font-size: 14px; font-weight: bold">Нетто</span><span
                                         class="col-lg-12 col-md-12 col-6 p-0"
                                         style="font-family: Open-Sans, sans-serif">0.00</span>
                                 </div>
+                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1"
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">Брутто</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0 d-flex justify-content-start" style="font-family: Open-Sans, sans-serif;">0.00</span>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1 "
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">Ціна</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0 d-flex justify-content-md-center justify-content-lg-center" style="font-family: Open-Sans, sans-serif;">0.00</span>
+                                </div>
                                 <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1 pl-md-0 pl-lg-0"
                                      style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Од. вим.</span><span
+                                                                   style="font-size: 14px; font-weight: bold">Сума</span><span
                                         class="col-lg-12 col-md-12 col-6 p-0">кг</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 p-0 d-flex box-shadow-container brd-bot-line mb-3 mb-lg-0 mb-md-0"
+                        <div class="col-12 p-0 d-none d-md-flex d-lg-flex  brd-bot-line mb-lg-0 mb-md-0"
                              style="min-height: 52px; color: #232323">
                             <div class="col-12 p-0  d-flex flex-lg-row flex-md-row flex-column align-items-center my-2 my-lg-0 my-my-0">
-                                <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1"
+                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1"
                                      style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Назва:</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0">Title</span>
+                                                                   style="font-size: 14px; font-weight: bold">№</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0" style="font-family: Open-Sans, sans-serif">99999</span>
                                 </div>
                                 <div class="col-md-4 col-lg-4 col-12 d-flex justify-content-between mt-1"
                                      style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Залишок на початок:</span><span
+                                                                   style="font-size: 14px; font-weight: bold">Найменування продуктів:</span><span
                                         class="col-lg-12 col-md-12 col-6 p-0"
-                                        style="font-family: Open-Sans, sans-serif">0.00</span>
+                                        style="">Title</span>
                                 </div>
                                 <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1"
                                      style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Потреба:</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0">Title</span>
+                                                                   style="font-size: 14px; font-weight: bold">Од.вим.</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0">кг</span>
                                 </div>
-                                <div class="col-md-3 col-lg-3 col-12 d-flex justify-content-between mt-1"
+                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1"
                                      style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Залишок на кінець:</span><span
+                                                                   style="font-size: 14px; font-weight: bold">Нетто</span><span
                                         class="col-lg-12 col-md-12 col-6 p-0"
                                         style="font-family: Open-Sans, sans-serif">0.00</span>
                                 </div>
+                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1"
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">Брутто</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0 d-flex justify-content-start" style="font-family: Open-Sans, sans-serif;">0.00</span>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1 "
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">Ціна</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0 d-flex justify-content-md-center justify-content-lg-center" style="font-family: Open-Sans, sans-serif;">0.00</span>
+                                </div>
                                 <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1 pl-md-0 pl-lg-0"
                                      style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Од. вим.</span><span
+                                                                   style="font-size: 14px; font-weight: bold">Сума</span><span
                                         class="col-lg-12 col-md-12 col-6 p-0">кг</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 p-0 d-flex box-shadow-container brd-bot-line mb-3 mb-lg-0 mb-md-0"
+                        <div class="col-12 p-0 d-none d-md-flex d-lg-flex  brd-bot-line mb-lg-0 mb-md-0"
                              style="min-height: 52px; color: #232323">
                             <div class="col-12 p-0  d-flex flex-lg-row flex-md-row flex-column align-items-center my-2 my-lg-0 my-my-0">
-                                <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1"
+                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1"
                                      style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Назва:</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0">Title</span>
+                                                                   style="font-size: 14px; font-weight: bold">№</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0" style="font-family: Open-Sans, sans-serif">99999</span>
                                 </div>
                                 <div class="col-md-4 col-lg-4 col-12 d-flex justify-content-between mt-1"
                                      style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Залишок на початок:</span><span
+                                                                   style="font-size: 14px; font-weight: bold">Найменування продуктів:</span><span
                                         class="col-lg-12 col-md-12 col-6 p-0"
-                                        style="font-family: Open-Sans, sans-serif">0.00</span>
+                                        style="">Title</span>
                                 </div>
                                 <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1"
                                      style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Потреба:</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0">Title</span>
-                                </div>
-                                <div class="col-md-3 col-lg-3 col-12 d-flex justify-content-between mt-1"
-                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Залишок на кінець:</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0"
-                                        style="font-family: Open-Sans, sans-serif">0.00</span>
-                                </div>
-                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1 pl-md-0 pl-lg-0"
-                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Од. вим.</span><span
+                                                                   style="font-size: 14px; font-weight: bold">Од.вим.</span><span
                                         class="col-lg-12 col-md-12 col-6 p-0">кг</span>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-12 p-0 d-flex box-shadow-container brd-bot-line mb-3 mb-lg-0 mb-md-0"
-                             style="min-height: 52px; color: #232323">
-                            <div class="col-12 p-0  d-flex flex-lg-row flex-md-row flex-column align-items-center my-2 my-lg-0 my-my-0">
-                                <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1"
+                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1"
                                      style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Назва:</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0">Title</span>
-                                </div>
-                                <div class="col-md-4 col-lg-4 col-12 d-flex justify-content-between mt-1"
-                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Залишок на початок:</span><span
+                                                                   style="font-size: 14px; font-weight: bold">Нетто</span><span
                                         class="col-lg-12 col-md-12 col-6 p-0"
                                         style="font-family: Open-Sans, sans-serif">0.00</span>
                                 </div>
-                                <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1"
+                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1"
                                      style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Потреба:</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0">Title</span>
+                                                                   style="font-size: 14px; font-weight: bold">Брутто</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0 d-flex justify-content-start" style="font-family: Open-Sans, sans-serif;">0.00</span>
                                 </div>
-                                <div class="col-md-3 col-lg-3 col-12 d-flex justify-content-between mt-1"
+                                <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1 "
                                      style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Залишок на кінець:</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0"
-                                        style="font-family: Open-Sans, sans-serif">0.00</span>
+                                                                   style="font-size: 14px; font-weight: bold">Ціна</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0 d-flex justify-content-md-center justify-content-lg-center" style="font-family: Open-Sans, sans-serif;">0.00</span>
                                 </div>
                                 <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1 pl-md-0 pl-lg-0"
                                      style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Од. вим.</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0">кг</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 p-0 d-flex box-shadow-container brd-bot-line mb-3 mb-lg-0 mb-md-0"
-                             style="min-height: 52px; color: #232323">
-                            <div class="col-12 p-0  d-flex flex-lg-row flex-md-row flex-column align-items-center my-2 my-lg-0 my-my-0">
-                                <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1"
-                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Назва:</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0">Title</span>
-                                </div>
-                                <div class="col-md-4 col-lg-4 col-12 d-flex justify-content-between mt-1"
-                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Залишок на початок:</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0"
-                                        style="font-family: Open-Sans, sans-serif">0.00</span>
-                                </div>
-                                <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1"
-                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Потреба:</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0">Title</span>
-                                </div>
-                                <div class="col-md-3 col-lg-3 col-12 d-flex justify-content-between mt-1"
-                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Залишок на кінець:</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0"
-                                        style="font-family: Open-Sans, sans-serif">0.00</span>
-                                </div>
-                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1 pl-md-0 pl-lg-0"
-                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Од. вим.</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0">кг</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 p-0 d-flex box-shadow-container brd-bot-line mb-3 mb-lg-0 mb-md-0"
-                             style="min-height: 52px; color: #232323">
-                            <div class="col-12 p-0  d-flex flex-lg-row flex-md-row flex-column align-items-center my-2 my-lg-0 my-my-0">
-                                <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1"
-                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Назва:</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0">Title</span>
-                                </div>
-                                <div class="col-md-4 col-lg-4 col-12 d-flex justify-content-between mt-1"
-                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Залишок на початок:</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0"
-                                        style="font-family: Open-Sans, sans-serif">0.00</span>
-                                </div>
-                                <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1"
-                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Потреба:</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0">Title</span>
-                                </div>
-                                <div class="col-md-3 col-lg-3 col-12 d-flex justify-content-between mt-1"
-                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Залишок на кінець:</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0"
-                                        style="font-family: Open-Sans, sans-serif">0.00</span>
-                                </div>
-                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1 pl-md-0 pl-lg-0"
-                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Од. вим.</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0">кг</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 p-0 d-flex box-shadow-container brd-bot-line mb-3 mb-lg-0 mb-md-0"
-                             style="min-height: 52px; color: #232323">
-                            <div class="col-12 p-0  d-flex flex-lg-row flex-md-row flex-column align-items-center my-2 my-lg-0 my-my-0">
-                                <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1"
-                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Назва:</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0">Title</span>
-                                </div>
-                                <div class="col-md-4 col-lg-4 col-12 d-flex justify-content-between mt-1"
-                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Залишок на початок:</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0"
-                                        style="font-family: Open-Sans, sans-serif">0.00</span>
-                                </div>
-                                <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1"
-                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Потреба:</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0">Title</span>
-                                </div>
-                                <div class="col-md-3 col-lg-3 col-12 d-flex justify-content-between mt-1"
-                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Залишок на кінець:</span><span
-                                        class="col-lg-12 col-md-12 col-6 p-0"
-                                        style="font-family: Open-Sans, sans-serif">0.00</span>
-                                </div>
-                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1 pl-md-0 pl-lg-0"
-                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
-                                                                   style="font-size: 14px; font-weight: bold">Од. вим.</span><span
+                                                                   style="font-size: 14px; font-weight: bold">Сума</span><span
                                         class="col-lg-12 col-md-12 col-6 p-0">кг</span>
                                 </div>
                             </div>
                         </div>
 
                     </div>
+
                 </div>
+                <div class="row mx-0 justify-content-start w-100 align-content-center mt-2">
+                    <div class="col-12 p-0  mt-2 d-flex flex-column box-shadow-container mt-4">
+                        <div class="col-12  d-flex flex-column brd-bot-line">
+                            <span class="h3 pt-lg-0 pt-md-0 pt-3" style="font-weight: 600; font-size: 18px; color: #232323">Котлета по-київські</span>
+                            <span class="h4 font-italic d-flex align-items-center pb-2 pb-lg-0 pb-md-0 " style="font-size: 14px; line-height: 16px; color: #797979;"><img src="../img/arrow-right.svg" class="d-md-block d-lg-block d-none mr-1" alt="Arrow right">Котлета по-київські</span>
+                        </div>
+                        <div class="col-12  px-0 ml-0 mr-0 justify-content-start w-100 align-content-center d-lg-flex d-none d-md-flex d-sm-none mt-3"
+                             style="height: 40px; font-weight: 500; font-size: 18px; color: #232323; background: #F7F7F7;">
+                            <div class="col-1 d-flex align-items-center" style="cursor: pointer"><span>№</span></div>
+                            <div class="col-4 d-flex align-items-center" style="cursor: pointer"><span>Найменування продуктів</span></div>
+                            <div class="col-2 d-flex align-items-center" style="cursor: pointer"><span>Од.вим.</span></div>
+                            <div class="col-1 d-flex align-items-center" style="cursor: pointer"><span>Нетто</span></div>
+                            <div class="col-1 d-flex align-items-center justify-content-start pr-0" style="cursor: pointer"><span>Брутто</span></div>
+                            <div class="col-2 d-flex align-items-center justify-content-center" style="cursor: pointer"><span>Ціна</span></div>
+                            <div class="col-1 d-flex align-items-center pl-0" style="cursor: pointer"><span>Сума</span></div>
+
+
+                        </div>
+                        <div class="col-12 p-0 d-flex  brd-bot-line mb-lg-0 mb-md-0"
+                             style="min-height: 52px; color: #232323">
+                            <div class="col-12 p-0  d-flex flex-lg-row flex-md-row flex-column align-items-center my-2 my-lg-0 my-my-0">
+                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1"
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">№</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0" style="font-family: Open-Sans, sans-serif">99999</span>
+                                </div>
+                                <div class="col-md-4 col-lg-4 col-12 d-flex justify-content-between mt-1"
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">Найменування продуктів:</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0"
+                                        style="">Title</span>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1"
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">Од.вим.</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0">кг</span>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1"
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">Нетто</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0"
+                                        style="font-family: Open-Sans, sans-serif">0.00</span>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1"
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">Брутто</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0 d-flex justify-content-start" style="font-family: Open-Sans, sans-serif;">0.00</span>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1 "
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">Ціна</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0 d-flex justify-content-md-center justify-content-lg-center" style="font-family: Open-Sans, sans-serif;">0.00</span>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1 pl-md-0 pl-lg-0"
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">Сума</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0">кг</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 p-0 d-none d-md-flex d-lg-flex  brd-bot-line mb-lg-0 mb-md-0"
+                             style="min-height: 52px; color: #232323">
+                            <div class="col-12 p-0  d-flex flex-lg-row flex-md-row flex-column align-items-center my-2 my-lg-0 my-my-0">
+                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1"
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">№</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0" style="font-family: Open-Sans, sans-serif">99999</span>
+                                </div>
+                                <div class="col-md-4 col-lg-4 col-12 d-flex justify-content-between mt-1"
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">Найменування продуктів:</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0"
+                                        style="">Title</span>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1"
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">Од.вим.</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0">кг</span>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1"
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">Нетто</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0"
+                                        style="font-family: Open-Sans, sans-serif">0.00</span>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1"
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">Брутто</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0 d-flex justify-content-start" style="font-family: Open-Sans, sans-serif;">0.00</span>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1 "
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">Ціна</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0 d-flex justify-content-md-center justify-content-lg-center" style="font-family: Open-Sans, sans-serif;">0.00</span>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1 pl-md-0 pl-lg-0"
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">Сума</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0">кг</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 p-0 d-none d-md-flex d-lg-flex  brd-bot-line mb-lg-0 mb-md-0"
+                             style="min-height: 52px; color: #232323">
+                            <div class="col-12 p-0  d-flex flex-lg-row flex-md-row flex-column align-items-center my-2 my-lg-0 my-my-0">
+                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1"
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">№</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0" style="font-family: Open-Sans, sans-serif">99999</span>
+                                </div>
+                                <div class="col-md-4 col-lg-4 col-12 d-flex justify-content-between mt-1"
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">Найменування продуктів:</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0"
+                                        style="">Title</span>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1"
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">Од.вим.</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0">кг</span>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1"
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">Нетто</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0"
+                                        style="font-family: Open-Sans, sans-serif">0.00</span>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1"
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">Брутто</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0 d-flex justify-content-start" style="font-family: Open-Sans, sans-serif;">0.00</span>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-12 d-flex justify-content-between mt-1 "
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">Ціна</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0 d-flex justify-content-md-center justify-content-lg-center" style="font-family: Open-Sans, sans-serif;">0.00</span>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-12 d-flex justify-content-between mt-1 pl-md-0 pl-lg-0"
+                                     style="font-size: 16px"><span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                   style="font-size: 14px; font-weight: bold">Сума</span><span
+                                        class="col-lg-12 col-md-12 col-6 p-0">кг</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </div>
