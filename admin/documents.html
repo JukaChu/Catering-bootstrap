@@ -464,12 +464,12 @@
 
     </div>
 
-    <div class="modal fade" id="change-user-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <div class="modal fade" id="change-user-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1"
          aria-hidden="true">
         <div class="modal-dialog" style="max-width: 966px">
             <div class="modal-content overflow-hidden position-relative col-lg-12 col-12 p-0">
                 <div class="modal-header align-items-center col-12" style="padding-top:20px">
-                    <h5 class="modal-title px-lg-3 px-md-3 px-0" id="exampleModalLabel"
+                    <h5 class="modal-title px-lg-3 px-md-3 px-0" id="exampleModalLabel1"
                         style="font-size: 34px; line-height: 40px; font-weight: bold">Документ</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <img src="../img/close-modal.svg" aria-hidden="true" alt="">
@@ -530,7 +530,7 @@
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-12 px-lg-3 px-md-3 px-0">
-                            <button type="button" class="button-open-article col-12 btn btn-xl btn-outline-danger  justify-content-center  font-weight-bold btn-block" onmousemove="this.style.background='#36C233'; this.style.color='#ffffff'" onmouseout="this.style.background='#ffffff'; this.style.color='#36C233'" style="background: rgb(255, 255, 255); border-color: rgb(54, 194, 51); outline: none; height: 34px; color: rgb(54, 194, 51); display: flex; align-items: center; justify-content: space-evenly; font-size: 14px;">
+                            <button type="button"  data-toggle="modal" data-target="#change-article" class="col-12 btn btn-xl btn-outline-danger  justify-content-center  font-weight-bold btn-block" onmousemove="this.style.background='#36C233'; this.style.color='#ffffff'" onmouseout="this.style.background='#ffffff'; this.style.color='#36C233'" style="background: rgb(255, 255, 255); border-color: rgb(54, 194, 51); outline: none; height: 34px; color: rgb(54, 194, 51); display: flex; align-items: center; justify-content: space-evenly; font-size: 14px;">
                             ＋ ДОДАТИ
                         </button></div>
                     </form>
@@ -756,14 +756,28 @@
                             data-dismiss="modal">ВІДМІНИТИ
                     </button>
                 </div>
-                <div class="col-6 position-absolute arcticle" onclick="this.style.right = 0" style="background: #ffffff; top: 0; bottom: 0; right: -40%">
 
-                </div>
             </div>
 
         </div>
     </div>
-
+<!--    СДЕЛАТЬ ЕЩЕ ОДИН МОДАЛ, СНИЗУ, ОТКРЫВАТЬ НА КНОПКЕ ДОДАТИ придумать как дать з-индек выше в бекборд-->
+    <div class="modal fade" id="change-article" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe2" style="z-index: 2020;"
+         aria-hidden="true">
+        <div class="modal-dialog" style="max-width: 966px">
+            <div class="modal-content  position-relative col-lg-16 col-12 p-0">
+                <div class="modal-header align-items-center col-12" style="padding-top:20px">
+                    <h5 class="modal-title px-lg-3 px-md-3 px-0" id="exampleModalLabe2"
+                        style="font-size: 34px; line-height: 40px; font-weight: bold">Документ</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="../img/close-modal.svg" aria-hidden="true" alt="">
+                    </button>
+                </div>
+                <div class="modal-body col-auto mt-2 px-0">
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
 <footer class="footer row ml-0 mr-0"
@@ -845,9 +859,6 @@
         $(this).closest('.parent-delete').remove();
     });
 
-    $('.button-open-article').click(() => {
-        $('.arcticle').style.right = 0;
-    })
 
 
 </script>

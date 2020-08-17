@@ -1,3 +1,9 @@
+.modal-backdrop:nth-last-of-type(2n) {
+    z-index: 2000;
+}
+
+
+
 html {
     --main-font-color: #232323;
     font-family: Raleway, sans-serif;
