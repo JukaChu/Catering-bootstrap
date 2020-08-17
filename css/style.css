@@ -185,18 +185,18 @@ body {
     cursor: pointer;
 }
 
-#self-button {
+#self-button, #self-button-logo, #self-button-seal {
     font-weight: normal;
     font-size: 16px;
 }
 
-#self-button::before {
+#self-button::before, #self-button-logo::before, #self-button-seal::before {
     content: url("../img/before-dwn.svg");
     width: 16px;
     margin-right: 10px;
 }
 
-#self-button::after {
+#self-button::after, #self-button-logo::after, #self-button-seal::after {
     content: "Обзор";
     position: absolute;
     top: 4px;
