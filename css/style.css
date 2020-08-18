@@ -1,7 +1,4 @@
 
-
-
-
 html {
     --main-font-color: #232323;
     font-family: Raleway, sans-serif;
@@ -46,8 +43,21 @@ body {
     background: #36c233 url("../img/white-plus.svg") no-repeat center;
 }
 
+.border-reverse {
+    border: 1px solid #B1B1B1;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.add-new-complex {
+    background: url("../img/green-plus.svg") no-repeat center;
+}
 
 @media (max-width: 767px) {
+
+    .border-reverse {
+        border: none;
+    }
 
     .flex-zero {
         flex: 0 !important;
