@@ -69,9 +69,29 @@ body {
 }
 
 .background-foliage {
-    background: url("../img/bg-foliage.png") no-repeat right 50%;
-    /*background-size: contain;*/
+    background-image: url("../img/bg-foliage.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 42%;
 }
+
+.background-blob {
+    background-image: url("../img/main-page-bg-second.svg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 13%;
+}
+
+.bg-foliage {
+    top: 0;
+    right: 0;
+}
+
+.bg-blob {
+    left: 0;
+    bottom: 0;
+}
+
 
 .button-add-complex {
     outline: none;
@@ -97,7 +117,62 @@ body {
     background: url("../img/green-plus.svg") no-repeat center;
 }
 
+#carousel-main-page .carousel-item-next {
+    visibility: visible !important;
+    display: flex;
+}
+
+#carousel-main-page .active.carousel-item {
+    display: block;
+}
+
+#carousel-main-page .carousel-item {
+    /*display: block;*/
+}
+
+.first-footer {
+    background: #222222;
+    height: 91px;
+}
+
+.second-footer {
+    background: #000000
+}
+
+.non-visible-mob a:nth-of-type(1) {
+    background: url("../img/fb-footer-pc.svg") no-repeat center;
+}
+
+.non-visible-mob a:nth-of-type(2) {
+    background: url("../img/insta-footer-pc.svg") no-repeat center;
+}
+
+.visible-mob a:nth-of-type(1) {
+    background: url("../img/fb-footer-mob.svg") no-repeat center;
+}
+
+.visible-mob a:nth-of-type(2) {
+    background: url("../img/insta-footer-mob.svg") no-repeat center;
+}
+
 @media (max-width: 767px) {
+    .background-foliage {
+        background-position: right 105%;
+        background-size: 90%;
+    }
+
+    .background-blob {
+        background: none;
+    }
+
+    .first-footer {
+        background: #222222;
+        height: 63px;
+    }
+
+    .second-footer {
+        background: #222222;
+    }
 
     .border-reverse {
         border: none;
@@ -180,7 +255,7 @@ body {
     }
 
     .date-container {
-        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
         border-radius: 4px;
     }
 
@@ -210,7 +285,7 @@ body {
     }
 
     .box-shadow-container {
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
         border-radius: 4px
     }
 
@@ -256,10 +331,33 @@ body {
     #change-article {
         padding-right: 0 !important;
     }
+
+    .font-for-carousel {
+        font-size: 28px !important;
+        align-items: center !important;
+        line-height: 35px !important;
+    }
+
+    .control-indicators {
+        justify-content: center !important;
+    }
 }
 
 .brd-bot-line {
     border-bottom: 1px solid #EAEAEA !important;
+}
+
+.control-indicators li {
+    background: #F0F2F0;
+    box-sizing: border-box;
+    height: 2px;
+    width: 45px;
+    padding: 0;
+    border: 2px solid transparent;
+}
+
+.control-indicators li.active {
+    background: #36C233;
 }
 
 @media (max-width: 413px) {
@@ -353,6 +451,10 @@ body {
     content: none;
 }
 
+#dropdown-admin-full::after {
+    content: none;
+}
+
 .page-link {
     border: 2px solid transparent !important;
 }
@@ -361,6 +463,16 @@ body {
     border: 2px solid #F1F2F4 !important;
     background: #ffffff !important;
     color: #232323 !important;
+}
+
+.font-for-carousel {
+    font-size: 60px;
+    line-height: 70px;
+    align-items: start;
+}
+
+.control-indicators {
+    justify-content: start;
 }
 
 #dropdown-buttons-hover .dropdown-item {
@@ -440,7 +552,7 @@ body {
 #tab-profile .nav-link {
     text-align: center;
     color: #232323;
-    font-family: Open-Sans;
+    font-family: Open-Sans, sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
@@ -451,7 +563,7 @@ body {
 #tab-user .nav-link {
     text-align: center;
     color: #232323;
-    font-family: Open-Sans;
+    font-family: Open-Sans, sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
