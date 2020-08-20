@@ -38,6 +38,7 @@ body {
     background: #ffffff;
     z-index: 3000;
     display: none;
+    flex-direction: column;
     transition: 0.4s ease-in-out;
 }
 
@@ -46,6 +47,7 @@ body {
     right: 0;
     display: none;
     visibility: hidden;
+    flex-direction: column;
 }
 
 
@@ -160,7 +162,8 @@ body {
     .modal-burger-toggle {
         left: 0;
         right: 0;
-        display: block;
+        display: flex;
+        flex-direction: column;
         transition: 0.4s ease-in-out;
         visibility: visible;
     }
