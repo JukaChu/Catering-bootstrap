@@ -37,13 +37,14 @@ body {
     bottom: 0;
     background: #ffffff;
     z-index: 3000;
-    visibility: hidden;
+    display: none;
     transition: 0.4s ease-in-out;
 }
 
 .modal-burger-toggle {
     left: 0;
     right: 0;
+    display: none;
     visibility: hidden;
 }
 
@@ -159,8 +160,9 @@ body {
     .modal-burger-toggle {
         left: 0;
         right: 0;
-        visibility: visible;
+        display: block;
         transition: 0.4s ease-in-out;
+        visibility: visible;
     }
 
     .background-foliage {
