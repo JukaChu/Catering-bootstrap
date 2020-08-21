@@ -157,6 +157,18 @@ body {
     background: url("../img/insta-footer-mob.svg") no-repeat center;
 }
 
+.order-active {
+    background: #F1FFF1;
+    border-left: 4px solid #36C233;
+    font-weight: bold;
+}
+
+.order-active__no-order {
+    background: #FFF2F2;
+    border-left: 4px solid #FF6666;;
+    font-weight: normal;
+}
+
 @media (max-width: 767px) {
 
     .modal-burger-toggle {
@@ -306,7 +318,7 @@ body {
     }
 
     .carousel-control-prev {
-        visibility: hidden;
+        /*visibility: hidden;*/
     }
 
     .change-color-grey {
