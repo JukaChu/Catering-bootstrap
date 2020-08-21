@@ -9,6 +9,50 @@ body {
     font-family: Raleway, sans-serif;
 }
 
+footer {
+    margin: 0 !important;
+}
+
+#register-form-styles .form-group label, #register-form-styles .form-group div {
+    margin: 7px 0;
+}
+
+#register-form-styles .form-group label {
+    font-size: 18px;
+    color: #232323;
+
+}
+
+#register-form-styles .form-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+#register-form-styles .form-group div input {
+    padding-left: 15px;
+}
+
+.invisible-validation {
+    display: none;
+    position: absolute;
+    bottom: -26px;
+
+}
+
+#register-form-styles .form-group div input:focus ~ .invisible-validation {
+    display: inline;
+}
+
+#register-form-styles .form-group div input:focus:invalid {
+    border-color: red;
+    box-shadow: 0 0 6px 0 red;
+}
+
+#register-form-styles .form-group div input:required:valid {
+    border-color: #36C233;
+    box-shadow: 0 0 6px 0 #36C233;
+}
+
 .span-gray-bg {
     background: none;
 }
