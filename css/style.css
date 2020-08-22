@@ -43,6 +43,30 @@ footer {
     display: inline;
 }
 
+.disabled-hovered {
+    display: none;
+    position: absolute;
+    background: #464646;
+    bottom: -140px;
+    z-index: 100000;
+    line-height: 16px;
+    height: 133px;
+    width: 12%;
+    transition: 0.2s ease-in-out;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.weeks-tab li .day-of-week__past:hover + .disabled-hovered {
+    display: flex;
+}
+
+.order-carousel .carousel-inner {
+    overflow: hidden;
+    height: 200px;
+}
+
 #register-form-styles .form-group div input:focus:invalid {
     border-color: red;
     box-shadow: 0 0 6px 0 red;
@@ -215,6 +239,15 @@ footer {
 
 @media (max-width: 767px) {
 
+
+    .weeks-tab li .day-of-week__past:hover + .disabled-hovered {
+        display: none;
+    }
+
+    #days-of-week-carousel .carousel-inner {
+        overflow: hidden;
+    }
+
     .modal-burger-toggle {
         left: 0;
         right: 0;
@@ -362,7 +395,7 @@ footer {
     }
 
     .carousel-control-prev {
-        /*visibility: hidden;*/
+
     }
 
     .change-color-grey {
