@@ -97,14 +97,16 @@
             <div class="col-12 align-content-center mr-md-auto px-0 d-flex justify-content-between flex-md-row flex-lg-row flex-column-reverse mt-3">
                 <div class="col-lg-9 col-md-9 col-12 d-flex flex-column p-0 mt-2">
                     <span class="change-color-grey change-weight" style="font-size: 16px">Обрати меню:</span>
-                    <div class="col-xl-8 col-lg-9 col-md-10 d-none d-lg-flex d-md-flex p-0 justify-content-between mt-2">
+                    <div class="col-xl-8 col-lg-9 col-md-10 d-none d-lg-flex d-md-flex p-0 justify-content-between mt-2"
+                         id="type-menu-food">
                         <button class="btn btn-for-type-menu btn-for-type-menu--active" type="button">Стандартне
                         </button>
                         <button class="btn btn-for-type-menu" type="button">Безлактозне</button>
                         <button class="btn btn-for-type-menu" type="button">Безглютенове</button>
                         <button class="btn btn-for-type-menu" type="button">Овочево-рибне</button>
                     </div>
-                    <select name="sources" id="sources" class="custom-select sources type-of-food" placeholder="Стандартне"
+                    <select name="sources" id="sources" class="custom-select sources type-of-food"
+                            placeholder="Стандартне"
                             style="border: none; z-index: 2000">
                         <option class="drpdown-btn-type selection" value="standart"
                                 style="border: none; box-shadow: 0 4px 22px rgba(0, 0, 0, 0.15);">Стандартне
@@ -122,7 +124,7 @@
                 </button>
             </div>
         </div>
-        <div id="days-of-week-carousel" class="carousel slide container px-0 order-carousel mt-3" data-ride="carousel" >
+        <div id="days-of-week-carousel" class="carousel slide container px-0 order-carousel mt-3" data-ride="carousel">
             <div class="carousel-inner" style="position: relative;">
                 <div style="position: absolute; z-index: 5; right: -5px; width: 60px; height: 70px;background: linear-gradient(270deg, #FFFFFF 15.1%, rgba(255, 255, 255, 0) 100%);"></div>
                 <div class="carousel-item active">
@@ -1297,6 +1299,21 @@
         </div>
     </div>
 </footer>
+<script>
+    let btnsType = [...document.querySelectorAll('.btn-for-type-menu')];
+    btnsType.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            if (btn.classList.contains('btn-for-type-menu--active')) {
+
+            } else {
+                btnsType.forEach((scbtn) => {
+                    scbtn.classList.remove('btn-for-type-menu--active')
+                });
+                btn.classList.add('btn-for-type-menu--active');
+            }
+        })
+    })
+</script>
 <script src="../js/index-week.js"></script>
 
 
