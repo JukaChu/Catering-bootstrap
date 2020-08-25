@@ -595,15 +595,20 @@
                 </div>
                 <div class="col-12 p-0 d-none flex-column" id="cart-for-hide" style="transition: 0.2s ease-in-out;">
                     <div class="col-12 mt-3 brd-bot-line" style="font-size: 24px">Сніданок</div>
-                    <div class="col-12 p-0" id="dinner-container">
+                    <div class="col-12 p-0 parent-delete d-flex flex-column" id="dinner-container">
                         <div class="col-12  position-relative brd-bot-line mb-3 mt-3">
-                            <div class="col-12 p-0 d-flex flex-column br">
+                            <div class="col-12 p-0 d-flex flex-column ">
+                                <div class="col-12 p-0 d-flex justify-content-between align-items-center">
     <span class="h3 pt-lg-0 pt-md-0 pt-3 brd-bot-line-reverse pb-4 pb-md-0 pb-lg-0"
           style="font-weight: 600; font-size: 18px; color: #232323">Сніданок для садочків</span>
+                                    <button class="btn delete-parent" style="background: none; border: none">
+                                        <img src="../img/delete-icon.svg" alt="Delete item">
+                                    </button>
+                                </div>
                                 <span class="h4 font-italic d-flex align-items-center pb-2 pb-lg-0 pb-md-0 mt-2"
                                       style="font-size: 14px; line-height: 16px; color: #797979;">Перше</span>
                             </div>
-                            <div class="col-12 p-0 d-flex flex-lg-row flex-md-row align-items-md-center align-items-lg-center align-items-start pb-lg-2 pb-md-2 pb-3 parent-delete">
+                            <div class="col-12 p-0 d-flex flex-lg-row flex-md-row align-items-md-center align-items-lg-center align-items-start pb-lg-2 pb-md-2 pb-3 ">
                                 <div class="col-lg-1 col-md-2 col-2 px-0"><img src="../img/img-week.png"
                                                                                alt="Image week dish"
                                                                                style="width: inherit; max-width: 61px;">
@@ -628,9 +633,7 @@
                                          style="font-family: Open-Sans, sans-serif; font-size: 16px;">40.09 ₴
                                     </div>
                                     <div class="col-lg-1 col-md-1 col-12 d-flex justify-content-lg-start justify-content-md-start justify-content-end pr-4 pr-lg-0 pr-md-0">
-                                        <button class="btn delete-parent" style="background: none; border: none">
-                                            <img src="../img/delete-icon.svg" alt="Delete item">
-                                        </button>
+
                                     </div>
                                 </div>
                             </div>
@@ -638,7 +641,7 @@
     <span class="h4 font-italic d-flex align-items-center pb-2 pb-lg-0 pb-md-0 mt-2"
           style="font-size: 14px; line-height: 16px; color: #797979;">Друге</span>
                             </div>
-                            <div class="col-12 p-0 d-flex flex-lg-row flex-md-row align-items-md-center align-items-lg-center align-items-start pb-lg-2 pb-md-2 pb-3 parent-delete">
+                            <div class="col-12 p-0 d-flex flex-lg-row flex-md-row align-items-md-center align-items-lg-center align-items-start pb-lg-2 pb-md-2 pb-3 ">
                                 <div class="col-lg-1 col-md-2 col-2 px-0"><img src="../img/img-week.png"
                                                                                alt="Image week dish"
                                                                                style="width: inherit; max-width: 61px;">
@@ -662,38 +665,41 @@
                                          style="font-family: Open-Sans, sans-serif; font-size: 16px;">40.09 ₴
                                     </div>
                                     <div class="col-lg-1 col-md-1 col-12 d-flex justify-content-lg-start justify-content-md-start justify-content-end pr-4 pr-lg-0 pr-md-0">
-                                        <button class="btn delete-parent" style="background: none; border: none">
-                                            <img src="../img/delete-icon.svg" alt="Delete item">
-                                        </button>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
-                    </div>
-                    <div class="col-12 p-0 d-flex py-2">
-                        <div class="col-1"></div>
-                        <div class="col-11 d-flex flex-row">
-                            <div class="col-7 d-lg-block d-md-block d-none"></div>
-                            <div class="col-lg-2 col-md-2 col-6"><span class="font-weight-bold"
-                                                                       style="font-size: 20px; color: #232323">Разом</span>
-                            </div>
-                            <div class="col-lg-2 col-md-2 col-6 p-0 d-flex justify-content-center"><span
-                                    id="amount-dinner"
-                                    style="font-family: Open-Sans,sans-serif; color: #797979;">56.00 ₴</span>
+                        <div class="col-12 p-0 d-flex py-2">
+                            <div class="col-1"></div>
+                            <div class="col-11 d-flex flex-row">
+                                <div class="col-7 d-lg-block d-md-block d-none"></div>
+                                <div class="col-lg-2 col-md-2 col-6"><span class="font-weight-bold"
+                                                                           style="font-size: 20px; color: #232323">Разом</span>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-6 p-0 d-flex justify-content-center"><span
+                                        id="amount-dinner"
+                                        style="font-family: Open-Sans,sans-serif; color: #797979;">56.00 ₴</span>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-12 mt-3 brd-bot-line" style="font-size: 24px">Обід</div>
-                    <div class="col-12 p-0" id="lunch-container">
+                    <div class="col-12 p-0 parent-delete d-flex flex-column" id="lunch-container">
                         <div class="col-12  position-relative brd-bot-line mb-3 mt-3">
                             <div class="col-12 p-0 d-flex flex-column br">
+                                <div class="col-12 p-0 d-flex justify-content-between align-items-center">
     <span class="h3 pt-lg-0 pt-md-0 pt-3 brd-bot-line-reverse pb-4 pb-md-0 pb-lg-0"
           style="font-weight: 600; font-size: 18px; color: #232323">Обід для садочків</span>
+                                    <button class="btn delete-parent" style="background: none; border: none">
+                                        <img src="../img/delete-icon.svg" alt="Delete item">
+                                    </button>
+                                </div>
                                 <span class="h4 font-italic d-flex align-items-center pb-2 pb-lg-0 pb-md-0 mt-2"
                                       style="font-size: 14px; line-height: 16px; color: #797979;">Перше</span>
                             </div>
-                            <div class="col-12 p-0 d-flex flex-lg-row flex-md-row align-items-md-center align-items-lg-center align-items-start pb-lg-2 pb-md-2 pb-3 parent-delete">
+                            <div class="col-12 p-0 d-flex flex-lg-row flex-md-row align-items-md-center align-items-lg-center align-items-start pb-lg-2 pb-md-2 pb-3 ">
                                 <div class="col-lg-1 col-md-2 col-2 px-0"><img src="../img/img-week.png"
                                                                                alt="Image week dish"
                                                                                style="width: inherit; max-width: 61px;">
@@ -718,9 +724,6 @@
                                          style="font-family: Open-Sans, sans-serif; font-size: 16px;">40.09 ₴
                                     </div>
                                     <div class="col-lg-1 col-md-1 col-12 d-flex justify-content-lg-start justify-content-md-start justify-content-end pr-4 pr-lg-0 pr-md-0">
-                                        <button class="btn delete-parent" style="background: none; border: none">
-                                            <img src="../img/delete-icon.svg" alt="Delete item">
-                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -728,7 +731,7 @@
     <span class="h4 font-italic d-flex align-items-center pb-2 pb-lg-0 pb-md-0 mt-2"
           style="font-size: 14px; line-height: 16px; color: #797979;">Друге</span>
                             </div>
-                            <div class="col-12 p-0 d-flex flex-lg-row flex-md-row align-items-md-center align-items-lg-center align-items-start pb-lg-2 pb-md-2 pb-3 parent-delete">
+                            <div class="col-12 p-0 d-flex flex-lg-row flex-md-row align-items-md-center align-items-lg-center align-items-start pb-lg-2 pb-md-2 pb-3 ">
                                 <div class="col-lg-1 col-md-2 col-2 px-0"><img src="../img/img-week.png"
                                                                                alt="Image week dish"
                                                                                style="width: inherit; max-width: 61px;">
@@ -752,27 +755,25 @@
                                          style="font-family: Open-Sans, sans-serif; font-size: 16px;">40.09 ₴
                                     </div>
                                     <div class="col-lg-1 col-md-1 col-12 d-flex justify-content-lg-start justify-content-md-start justify-content-end pr-4 pr-lg-0 pr-md-0">
-                                        <button class="btn delete-parent" style="background: none; border: none">
-                                            <img src="../img/delete-icon.svg" alt="Delete item">
-                                        </button>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
-                    </div>
-                    <div class="col-12 p-0 d-flex py-2">
-                        <div class="col-1"></div>
-                        <div class="col-11 d-flex flex-row">
-                            <div class="col-7 d-lg-block d-md-block d-none"></div>
-                            <div class="col-lg-2 col-md-2 col-6"><span class="font-weight-bold"
-                                                                       style="font-size: 20px; color: #232323">Разом</span>
-                            </div>
-                            <div class="col-lg-2 col-md-2 col-6 p-0 d-flex justify-content-center"><span
-                                    id="amount-lunch"
-                                    style="font-family: Open-Sans,sans-serif; color: #797979;">56.00 ₴</span>
+                        <div class="col-12 p-0 d-flex py-2">
+                            <div class="col-1"></div>
+                            <div class="col-11 d-flex flex-row">
+                                <div class="col-7 d-lg-block d-md-block d-none"></div>
+                                <div class="col-lg-2 col-md-2 col-6"><span class="font-weight-bold"
+                                                                           style="font-size: 20px; color: #232323">Разом</span>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-6 p-0 d-flex justify-content-center"><span
+                                        id="amount-lunch"
+                                        style="font-family: Open-Sans,sans-serif; color: #797979;">56.00 ₴</span>
+                                </div>
                             </div>
                         </div>
+
                     </div>
 
                     <div class="col-12 p-0 d-flex py-3 justify-content-md-end justify-content-lg-end justify-content-start brd-bot-line"
@@ -789,7 +790,9 @@
                         </div>
                     </div>
                     <div class="col-12  d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn btn-primary m-2 col-sm-4 col-xl-4 col-12" style="background: #36C233; border: 1px solid #36C233; height: 48px; text-transform: uppercase">ЗАМОВИТИ
+                        <button type="button" class="btn btn-primary m-2 col-sm-4 col-xl-4 col-12"
+                                style="background: #36C233; border: 1px solid #36C233; height: 48px; text-transform: uppercase">
+                            ЗАМОВИТИ
                         </button>
 
                     </div>
@@ -1040,6 +1043,13 @@
                 </div>
 
             </div>
+        </div>
+        <div class="col-12  d-flex justify-content-center align-items-center">
+            <button type="button" class="btn btn-primary m-2 col-sm-4 col-xl-4 col-12"
+                    style="background: #36C233; border: 1px solid #36C233; height: 48px; text-transform: uppercase">
+                ЗАМОВИТИ
+            </button>
+
         </div>
         <div class="row" style="margin-top: 48px">
             <div class="col-sm">
@@ -1866,7 +1876,7 @@
     $('.delete-parent').click(function () {
 
         let addSomeDishes = '<div class="col-12 p-0 d-flex justify-content-center" style=" background: #FDF5F1;">\n' +
-            '                                <span class="px-3 no-checked-dishes" style="">Потрібно вибрати страву для комплексу!</span>\n' +
+            '                                <span class="px-3 no-checked-dishes" style="">Потрібно вибрати комплекс!</span>\n' +
             '                            </div>';
         $(this).closest('.parent-delete').html(addSomeDishes);
 
