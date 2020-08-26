@@ -29,7 +29,7 @@
                                 class="px-2">Увійти</a>
                     </li>
                     <li class="nav-item ml-3 float-right">
-                        <a class="nav-link text-main-color-dark px-0 navbar-size-14" href="#"
+                        <a class="nav-link text-main-color-dark px-0 navbar-size-14" href="./register.html"
                            style="color: #232323"><img src="../img/reg-icon.svg"
                                                        alt="" class="px-2">Реєстрація</a>
                     </li>
@@ -43,18 +43,16 @@
                         <div class="dropdown-menu" aria-labelledby="dropdown-admin" id="dropdown-buttons-hover"
                              style="box-shadow: 0 4px 22px rgba(0, 0, 0, 0.15); border-radius: 4px; border: none; max-width: 245px; font-weight: 500; font-size: 14px;">
                             <a class="dropdown-item" href="./dishes.html">Список страв</a>
-                            <button class="dropdown-item" type="button">Лист категорій</button>
-                            <button class="dropdown-item" type="button">Інгредієнти</button>
+                            <a class="dropdown-item" href="./ingredients.html">Інгредієнти</a>
                             <a class="dropdown-item" href="./complex.html">Комплекс</a>
-                            <a class="dropdown-item" type="button" href="./day-week-menu.html">Меню на день /
-                                тиждень</a>
-                            <button class="dropdown-item" type="button">Замовлення</button>
-                            <button class="dropdown-item" type="button">Склад</button>
-                            <button class="dropdown-item" type="button">Склад/Залишки</button>
+                            <a class="dropdown-item" href="./day-week-menu.html">Меню на день / тиждень</a>
+                            <a class="dropdown-item" href="./week-dishes.html">Замовлення</a>
+                            <a class="dropdown-item" href="./stock.html">Склад</a>
+                            <a class="dropdown-item" href="./ConsignmentStock.html">Склад/Залишки</a>
                             <a class="dropdown-item" href="./documents.html">Документи</a>
-                            <a class="dropdown-item" href="./settings.html">Налаштування</a>
+                            <a class="dropdown-item " href="./settings.html">Налаштування</a>
                             <a class="dropdown-item " href="./report.html">Звiти</a>
-                            <a class="dropdown-item" type="button" href="./users.html">Користувачi</a>
+                            <a class="dropdown-item" href="./users.html">Користувачi</a>
                             <a class="dropdown-item" href="./users-group.html">Групи Користувачiв</a>
                             <a class="dropdown-item" href="./mailing.html">Розсилки email</a>
                         </div>
@@ -202,46 +200,78 @@
             <div class="tab-pane fade"
                  id="profile-child" role="tabpanel"
                  aria-labelledby="child-tab">
-                <div class="d-flex justify-content-center flex-column align-items-center">
+                <div id="child-container" class="d-flex justify-content-center flex-column align-items-center">
                     <div class="col-12 col-md-8 col-lg-9 p-0 d-flex align-items-center">
                         <div class="col-6 col-md-6 col-lg-6 p-0 d-flex flex-md-row flex-lg-row flex-column justify-content-between align-items-lg-center align-items-md-center">
-                            <label for="amount-child"
-                                   class="profile-form-title mb-1 justify-content-start mb-lg-0 mb-md-0">Кількість
-                                дітей</label>
+                            <label class="profile-form-title mb-1 justify-content-start mb-lg-0 mb-md-0"
+                                   for="ChildrenCount">Кількість дітей</label>
                             <span id="child-amount">
-                        <input type="number" min="0" value="0" id="amount-child">
-                                            <div class="child-amount-control"
-                                                 onclick="this.previousElementSibling.stepUp()">+</div>
-                                            <div class="child-amount-control"
-                                                 onclick="this.previousElementSibling.previousElementSibling.stepDown()">-</div>
-                        </span>
+                                    <input class="form-control col-12 col-lg-6 col-md-6 pl-3" autocomplete="off"
+                                           readonly="" type="number" data-val="true"
+                                           data-val-required="The Кількість дітей field is required." id="ChildrenCount"
+                                           name="ChildrenCount" value="1">
+                                    <span class="text-danger field-validation-valid" data-valmsg-for="ChildrenCount"
+                                          data-valmsg-replace="true"></span>
+
+                                </span>
                         </div>
                         <div class="col-6 p-0 d-flex justify-content-end align-self-end align-self-sm-end align-self-md-center"
                              style="height: 34px">
-                            <button type="button"
+                            <button type="button" id="addchild"
                                     class=" btn  btn-xl btn-outline-danger justify-content-center float-md-none font-weight-bold btn-block col-lg-5 col-md-5 col-7 m-0 p-0"
                                     onmousemove="this.style.background='#36C233'; this.style.color='#ffffff'"
                                     onmouseout="this.style.background='#ffffff'; this.style.color='#36C233'"
                                     style="background: #ffffff; border-color: #36C233; outline: none; height: 34px; color: #36C233; display: flex; align-items: center; justify-content: space-evenly; margin: 28px 0 23px; font-size: 14px;">
-                                &#65291; ДОДАТИ
+                                ＋ Додати
                             </button>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-8 col-lg-9 p-0 d-flex align-items-start mt-3 mt-lg-4 mt-md-4 flex-column justify-content-around"
-                         style="border: 1px solid #B1B1B1; border-radius: 4px; max-height: 154px; min-height: 110px">
-                        <div class="col-12 col-md-7 my-2 col-lg-6 p-0 pl-3 pr-3 pr-md-0 pr-lg-0 d-flex flex-md-row flex-lg-row flex-column justify-content-between align-items-lg-center align-items-md-center">
-                            <label for="child-name"
-                                   class="profile-form-title mb-1 justify-content-start mb-lg-0 mb-md-0">Ім'я</label>
-                            <input id="child-name" class="child-inputs" type="text" min="0" value="0"
-                                   placeholder="Ім'я">
+
+                    <div class="child-data my-3 col-12 col-md-8 col-lg-9 d-flex justify-content-around flex-column-reverse flex-lg-row-reverse flex-md-row-reverse  align-content-sm-center align-content-center align-items-sm-center align-items-center"
+                         style="border: 1px solid #B1B1B1; border-radius: 4px; max-height: 450px; min-height: 350px">
+                        <div class="col-12 col-xl-6 col-sm-12 col-md-12 p-0 " style="max-width: 400px; ">
+                            <input type="hidden" name="it[0].PictureId" id="it[0].PictureId" value="">
+
+                            <img class="col-12" id="imgfilepicture27fb457f-8b4f-4a66-96ce-5e98ae2f1d91"
+                                 src="/Pictures/GetPicture?width=250&amp;height=250" alt=""
+                                 style="padding: 0;width:400px;height:250px">
+                            <div class="custom-file mt-3">
+                                <input type="file" class="custom-file-input"
+                                       id="filepicture27fb457f-8b4f-4a66-96ce-5e98ae2f1d91" name="it[0].Picture"
+                                       data-target="#imgfilepicture27fb457f-8b4f-4a66-96ce-5e98ae2f1d91"
+                                       placeholder="Файл не обрано..."
+                                       style="height: 48px; display: flex; align-items: center" multiple=""
+                                       accept="image/jpeg,image/png">
+                                <label class="custom-file-label" id="self-button" for="load-image"
+                                       style="height: 48px; display: flex; align-items: center">Файл не обрано</label>
+                            </div>
+
                         </div>
-                        <div class="col-12 col-md-7 my-2 col-lg-6 p-0 pl-3 pr-3 pr-md-0 pr-lg-0 d-flex flex-md-row flex-lg-row flex-column justify-content-between align-items-lg-center align-items-md-center">
-                            <label for="child-date"
-                                   class="profile-form-title mb-1 justify-content-start mb-lg-0 mb-md-0">День
-                                народження</label>
-                            <input id="child-date" class="child-inputs" type="date" class="form-control" id="date"
-                                   name="date" required>
+                        <div class="col-12 col-xl-5 col-sm-6 col-md-5 justify-content-md-center justify-content-center mt-3 mt-md-0 mt-lg-0">
+                            <div class="row">
+                                <div class="col-12 px-0 d-flex flex-md-row flex-lg-row flex-column justify-content-between align-items-lg-center align-items-md-center my-2">
+                                    <input type="hidden" name="it[0].Id" id="it[0].Id"
+                                           value="27fb457f-8b4f-4a66-96ce-5e98ae2f1d91">
+                                    <label for="child-name27fb457f-8b4f-4a66-96ce-5e98ae2f1d91"
+                                           class="profile-form-title mb-1 justify-content-start mb-lg-0 mb-md-0">ПIБ
+                                        Дитини</label>
+                                    <input name="it[0].ChildNameSurname"
+                                           id="child-name27fb457f-8b4f-4a66-96ce-5e98ae2f1d91" class="child-inputs"
+                                           type="text" placeholder="Ім'я" data-val="true"
+                                           data-val-length="The field ChildNameSurname must be a string with a maximum length of 40."
+                                           data-val-length-max="40" maxlength="40" value="">
+                                </div>
+                                <div class="col-12 p-0  d-flex flex-md-row flex-lg-row flex-column justify-content-between align-items-lg-center align-items-md-center my-2">
+                                    <label for="child-date27fb457f-8b4f-4a66-96ce-5e98ae2f1d91"
+                                           class="profile-form-title mb-1 justify-content-start mb-lg-0 mb-md-0">
+                                        Дата народж.
+                                    </label>
+                                    <input name="it[0].ChildBirthdayDate"
+                                           id="child-date27fb457f-8b4f-4a66-96ce-5e98ae2f1d91" class="child-inputs"
+                                           type="date" value="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
