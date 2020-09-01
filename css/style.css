@@ -173,10 +173,9 @@ footer {
 }
 
 .background-foliage {
-    background-image: url("../img/bg-foliage.png");
+    background-image: url("../img/bg-anm/bg-foliage.png");
     background-repeat: no-repeat;
     background-position: right top;
-    background-size: 42%;
 }
 
 .background-blob {
@@ -196,7 +195,232 @@ footer {
     bottom: 0;
 }
 
+/*background animation*/
+.onion-animation {
+    background: url("../img/bg-anm/onion.png") no-repeat center;
+    position: absolute;
+    max-width: 604px;
+    mix-blend-mode: multiply;
+    right: 51%;
+    top: 57%;
+}
 
+.carrot-animation {
+    background: url("../img/bg-anm/carrot.png") no-repeat center;
+    position: absolute;
+    max-width: 604px;
+    mix-blend-mode: multiply;
+    right: 33%;
+    top: 39%;
+}
+
+.pepper-animation {
+    background: url("../img/bg-anm/pepper.png") no-repeat center;
+    position: absolute;
+    max-width: 604px;
+    mix-blend-mode: multiply;
+    right: 7%;
+    top: 56%;
+}
+
+.avocado-animation {
+    background: url("../img/bg-anm/avocado.png") no-repeat center;
+    position: absolute;
+    max-width: 604px;
+    mix-blend-mode: multiply;
+    right: 25%;
+    top: 14%;
+}
+
+
+.cheese-animation {
+    background: url("../img/bg-anm/cheese.png") no-repeat center;
+    position: absolute;
+    max-width: 604px;
+    mix-blend-mode: multiply;
+    right: 24%;
+    top: 34%;
+}
+
+
+.leaf-1-animation {
+    background: url("../img/bg-anm/leaf-1.png") no-repeat center;
+    position: absolute;
+    max-width: 604px;
+    mix-blend-mode: multiply;
+    right: -1%;
+    top: 10%;
+}
+
+
+.leaf-2-animation {
+    background: url("../img/bg-anm/leaf-2.png") no-repeat center;
+    position: absolute;
+    max-width: 604px;
+    mix-blend-mode: multiply;
+    right: 65%;
+    top: 20%;
+}
+
+
+.leaf-3-animation {
+    background: url("../img/bg-anm/leaf-3.png") no-repeat center;
+    position: absolute;
+    max-width: 604px;
+    mix-blend-mode: multiply;
+    right: 69%;
+    top: 6%;
+}
+
+
+.parsley-animation {
+    background: url("../img/bg-anm/parsley.png") no-repeat center;
+    position: absolute;
+    max-width: 604px;
+    mix-blend-mode: multiply;
+    right: -1%;
+    top: -1%;
+    animation: 6s linear parsley;
+    animation-iteration-count: infinite;
+}
+
+
+.linear-animation {
+    background: url("../img/bg-anm/linear.png") no-repeat center;
+    position: absolute;
+    max-width: 604px;
+    mix-blend-mode: multiply;
+    right: 52%;
+    top: 38%;
+    animation: 4s linear linear;
+    animation-iteration-count: infinite;
+}
+
+
+.linear-2-animation {
+    background: url("../img/bg-anm/linear.png") no-repeat center;
+    position: absolute;
+    max-width: 604px;
+    mix-blend-mode: multiply;
+    right: 40%;
+    top: 62%;
+    animation: 3s linear linear;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+
+.linear-3-animation {
+    background: url("../img/bg-anm/linear.png") no-repeat center;
+    position: absolute;
+    max-width: 604px;
+    mix-blend-mode: multiply;
+    right: 18%;
+    top: 15%;
+    animation: 3s linear linear;
+    animation-delay: 0.6s;
+    animation-iteration-count: infinite;
+}
+
+
+.linear-4-animation {
+    background: url("../img/bg-anm/linear.png") no-repeat center;
+    position: absolute;
+    max-width: 604px;
+    mix-blend-mode: multiply;
+    right: 72%;
+    top: 19%;
+    animation: 3s linear linear;
+    animation-delay: 0.4s;
+    animation-iteration-count: infinite;
+}
+
+.cabbage-animation {
+    background: url("../img/bg-anm/cabbage.png") no-repeat center;
+    position: absolute;
+    max-width: 604px;
+    mix-blend-mode: multiply;
+    right: -14px;
+    top: 33%;
+    animation: 4s linear cabbage;
+    animation-iteration-count: infinite;
+    transform: scale3d(0.8, 0.8, 0.8);
+
+}
+
+@keyframes linear {
+    0% {
+        transform: rotate(0deg) scale3d(0.7, 0.7, 0.7);
+    }
+    50% {
+        transform: rotate(360deg) scale3d(1.5, 1.5, 1.5);
+    }
+    100% {
+        transform: rotate(720deg) scale3d(0.7, 0.7, 0.7);
+    }
+}
+
+@keyframes cabbage {
+    25% {
+        top: 38%;
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        top: 33%;
+        transform: scale3d(0.8, 0.8, 0.8);
+    }
+    75% {
+        top: 29%;
+        transform: scale3d(1, 1, 1);
+
+    }
+    100% {
+        top: 33%;
+        transform: scale3d(0.8, 0.8, 0.8);
+
+    }
+}
+
+@keyframes parsley {
+    0% {
+        top: -13%;
+        right: -15%;
+    }
+    15% {
+        top: -13%;
+        right: -15%;
+    }
+    40% {
+        top: -1%;
+        right: -1%;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        top: -4%;
+        right: 0;
+        transform: rotate(15deg);
+    }
+    70% {
+        top: 2%;
+        right: -3%;
+        transform: rotate(-15deg);
+    }
+    80% {
+        top: -1%;
+        right: -1%;
+    }
+    86% {
+        top: -1%;
+        right: -1%;
+    }
+    100% {
+        top: -13%;
+        right: -15%;
+    }
+}
+
+/**/
 .button-add-complex {
     outline: none;
     border: 1px solid #36C233;
@@ -297,7 +521,7 @@ footer {
     }
 
     .background-foliage {
-        background-position: right 105%;
+        background: url("../img/bg-foliage.png") no-repeat right 80%;
         background-size: 90%;
     }
 
