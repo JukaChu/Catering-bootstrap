@@ -1,7 +1,7 @@
 # Catering-bootstrap
 [Demo on github](https://jukachu.github.io/Catering-bootstrap/)
 ***
-[Embedded website](kabachok.group)
+[Embedded website](https://kabachok.group)
 
 ## About
 >Catering its website for one popular ukrainian canteen for kids.
