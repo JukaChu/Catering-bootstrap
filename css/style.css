@@ -460,7 +460,7 @@ footer {
 
 .first-footer {
     background: #222222;
-    height: 91px;
+    min-height: 91px;
 }
 
 .second-footer {
@@ -495,7 +495,258 @@ footer {
     font-weight: normal;
 }
 
+#start-button {
+    color: #36C233;
+    background: #ffffff 50%;
+
+}
+
+.left-fixed-title-btn {
+    background: #F1F1F1;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    width: 139px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-90deg);
+    position: fixed;
+    top: 75px;
+    left: -51px;
+    cursor: pointer;
+}
+
+.hide-unhide {
+    display: none !important;
+    transition: 0.3s ease-in-out;
+}
+
+#block-buttons-start {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.change-size {
+    font-size: 34px;
+}
+
+.title-mixed-size {
+    font-size: 60px;
+}
+
+#block-client-cards {
+    display: none;
+}
+
+.margin-client-card {
+    margin-top: 51px;
+}
+
+.button-order-done {
+    background: #36C233;
+    max-width: inherit;
+    height: 100%;
+    max-height: 112px;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 23px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 30px;
+}
+
+#admin-side-client-cards .parent-delete:first-child {
+    border-top: 14px solid #36C233 !important;
+    border-bottom: 14px solid #36C233 !important;
+    border-radius: 22px !important;
+}
+
+.flex-reverse-style {
+    display: flex;
+    flex-direction: row;
+}
+
+#nfc-user-card {
+    display: none;
+}
+
+.rewrite-button {
+    background: #ffffff;
+    border: 1px solid #36C233;
+    border-radius: 4px;
+    color: #36C233;
+    transition: 0.2s ease-in;
+}
+
+.rewrite-button:hover {
+    background: #36C233;
+    border: 1px solid #36C233;
+    border-radius: 4px;
+    color: #ffffff;
+    transition: 0.2s ease-out;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.span-popup-text {
+    color: #232323;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.popup-icon {
+    width: 100px;
+}
+
 @media (max-width: 767px) {
+
+
+    .for-email-wrap {
+        word-break: break-word;
+    }
+
+    .button-order-done {
+        font-size: 14px;
+    }
+
+    .flex-reverse-style {
+        flex-direction: column !important;
+    }
+
+    #admin-side-client-cards .parent-delete:first-child {
+        border: none !important;
+    }
+
+    .change-size {
+        font-size: 18px !important;
+    }
+
+    .left-fixed-title-btn {
+        display: none !important;
+    }
+
+    #block-buttons-start {
+        flex-direction: column !important;
+    }
+
+
+    #start-button {
+        color: #ffffff;
+        background: #36C233 30%;
+
+    }
+
+    .title-btn-lines {
+        overflow: hidden;
+        position: relative;
+        margin: 0;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .title-btn-lines:before,
+    .title-btn-lines:after {
+        content: '';
+        display: inline-block;
+        position: relative;
+        top: -1px;
+        width: 50%;
+        height: 1px;
+        vertical-align: middle;
+        background: #DCDCDC;
+    }
+
+    .title-btn-lines:before {
+        left: -10px;
+        margin-left: -50%;
+    }
+
+    .title-btn-lines:after {
+        left: 10px;
+        margin-right: -50%;
+    }
+
+    .title-btn-lines__button-title {
+        border-radius: 4px;
+        border: 1px solid #DCDCDC;
+        background: #F1F1F1;
+        width: 112px;
+        font-size: 14px;
+        font-weight: 500;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .title-btn-lines__button-title span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .title-btn-lines > .title-btn-lines__button-title {
+        display: inline-block;
+        vertical-align: center;
+        white-space: normal;
+        max-width: 90%;
+        position: relative;
+    }
+
+    .plate-button {
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.08);
+        max-width: 224px;
+        margin: 10px 0 0 !important;
+    }
+
+    #say-hello-button {
+        background: #36C233 !important;
+    }
+
+    #say-hello-button .stroke-svg {
+        stroke: #ffffff;
+        color: #ffffff;
+    }
+
+    #off-nfc, #on-nfc, #pick-up-nfc {
+        justify-content: center !important;
+    }
+
+    .off-nfc-span {
+        font-weight: 600;
+    }
+
+    .nfc-off-desktop {
+        display: none !important;
+    }
+
+    .nfc-off-mob {
+        display: inline !important;
+    }
+
+    .nfc-non-active {
+        background: #FFF0EA;
+        min-height: 223px !important;
+    }
+
+    .nfc-is-active {
+        min-height: 72px !important;
+    }
+
+    #nfcurl {
+        height: 34px !important;
+    }
+
+    .desk-non-bord {
+        background: transparent !important;
+        border: 1px solid transparent !important;
+        border-radius: 4px;
+    }
+
+    .non-display {
+        display: inline-block !important;
+    }
+
     .no-checked-dishes {
         font-size: 16px;
         color: #f4875b;
@@ -653,6 +904,14 @@ footer {
         border-radius: 4px
     }
 
+    .title-mixed-size {
+        font-size: 24px;
+    }
+
+    .margin-client-card {
+        margin-top: 0 !important;
+    }
+
     .pos-for-btn {
         position: relative !important;
     }
@@ -733,6 +992,10 @@ footer {
 
 
 @media (max-width: 575px) {
+    .plate-button {
+        max-width: 166px;
+    }
+
     .money-w {
 
         left: 69%;
@@ -1458,6 +1721,108 @@ footer {
 
 .container-for-radio input:checked ~ .checkmark-for-radio::after {
     display: block;
+}
+
+.desk-non-bord {
+    background: #FAFAFA;
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+    margin: 1px 0;
+    cursor: pointer;
+}
+
+
+.non-display {
+    display: none;
+}
+
+.stroke-svg {
+    stroke: #232323;
+    color: #232323;
+}
+
+.active-hello-button, .active-plate-button {
+    background: #36C233 !important;
+}
+
+.active-hello-button .stroke-svg {
+    stroke: #ffffff;
+    color: #ffffff;
+}
+
+
+.active-plate-button .plate-stroke, .active-plate-button .plate-text {
+    stroke: #ffffff;
+    color: #ffffff;
+}
+
+.plate-stroke {
+    stroke: #797979;
+}
+
+.plate-text {
+    color: #232323;
+}
+
+#nfcurl {
+    height: 48px;
+}
+
+.nfc-non-active {
+    background: #FFF0EA;
+    min-height: 72px;
+    display: none;
+}
+
+.nfc-window {
+    display: flex;
+}
+
+.nfc-off-desktop {
+    display: inline;
+}
+
+.nfc-off-mob {
+    display: none;
+}
+
+.off-nfc-span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #232323;
+}
+
+#off-nfc {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#on-nfc {
+    display: none;
+    justify-content: left;
+    align-items: center;
+}
+
+
+#pick-up-nfc {
+    display: none;
+    justify-content: left;
+    align-items: center;
+}
+
+.nfc-is-active {
+    background: #F5FBF4;
+}
+
+#nfc-button {
+    display: flex;
+}
+
+#say-hello-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
