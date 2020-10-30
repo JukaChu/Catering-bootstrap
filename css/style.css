@@ -475,6 +475,25 @@ footer {
     background: url("../img/insta-footer-pc.svg") no-repeat center;
 }
 
+
+.non-visible-mob--footer a:nth-of-type(1) {
+    background: url("../img/fb-footer.svg") no-repeat center;
+    background-color: #507CBE;
+}
+
+.non-visible-mob--footer a:nth-of-type(2) {
+    background: url("../img/inst-footer.svg") no-repeat center;
+    background-size: contain;
+}
+
+.non-visible-mob--footer-cards a:nth-of-type(1) {
+    background: url("../img/visa-card.svg") no-repeat center;
+}
+
+.non-visible-mob--footer-cards a:nth-of-type(2) {
+    background: url("../img/master-card.svg") no-repeat center;
+}
+
 .visible-mob a:nth-of-type(1) {
     background: url("../img/fb-footer-mob.svg") no-repeat center;
 }
@@ -514,6 +533,22 @@ footer {
     position: fixed;
     top: 75px;
     left: -51px;
+    cursor: pointer;
+}
+
+.right-fixed-title-btn {
+    background: #F1F1F1;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    width: 139px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(90deg);
+    position: fixed;
+    top: 75px;
+    right: -51px;
     cursor: pointer;
 }
 
@@ -601,6 +636,9 @@ footer {
 
 @media (max-width: 767px) {
 
+    .pos-for-check {
+        bottom: 20px !important;
+    }
 
     .for-email-wrap {
         word-break: break-word;
@@ -625,6 +663,10 @@ footer {
     .left-fixed-title-btn {
         display: none !important;
     }
+
+    .right-fixed-title-btn {
+         display: none !important;
+     }
 
     #block-buttons-start {
         flex-direction: column !important;
@@ -1405,20 +1447,24 @@ footer {
 
 }
 
+
 #input-day-from .child-amount-control,
+.amount-of-complex .child-amount-control,
 #input-day-to .child-amount-control {
     background: #EBEBEB;
     width: 30px;
     height: 30px;
 }
 
-#input-day-from, #input-day-to {
+#input-day-from, #input-day-to, .amount-of-complex {
     position: relative;
     display: inline-block;
     flex-grow: 1;
 }
 
-#input-day-from input, #input-day-to input {
+
+
+#input-day-from input, #input-day-to input, .amount-of-complex input {
     font-size: 1em;
     -moz-appearance: textfield;
     height: 34px;
@@ -1430,11 +1476,13 @@ footer {
 }
 
 #input-day-from input::-webkit-inner-spin-button,
+.amount-of-complex input::-webkit-inner-spin-button,
 #input-day-to input::-webkit-inner-spin-button {
     display: none;
 }
 
 #input-day-from .child-amount-control,
+.amount-of-complex .child-amount-control,
 #input-day-to .child-amount-control {
     cursor: pointer;
     position: absolute;
@@ -1447,17 +1495,20 @@ footer {
 }
 
 #input-day-from .child-amount-control:hover,
+.amount-of-complex .child-amount-control:hover,
 #input-day-to .child-amount-control:hover {
     background: #FDF5F1;
 }
 
 #input-day-from .child-amount-control:nth-of-type(1),
+.amount-of-complex .child-amount-control:nth-of-type(1),
 #input-day-to .child-amount-control:nth-of-type(1) {
     bottom: 2px;
     right: 34px;
 }
 
 #input-day-from .child-amount-control:nth-of-type(2),
+.amount-of-complex .child-amount-control:nth-of-type(2),
 #input-day-to .child-amount-control:nth-of-type(2) {
     bottom: 2px;
     right: 2px;
