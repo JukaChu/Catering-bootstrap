@@ -824,12 +824,9 @@ footer {
 
     .first-footer {
         background: #222222;
-        height: 63px;
+
     }
 
-    .second-footer {
-        background: #222222;
-    }
 
     .border-reverse {
         border: none;
