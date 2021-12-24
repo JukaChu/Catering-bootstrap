@@ -1,0 +1,2017 @@
+<html lang="en">
+<head>
+    <title>Мои заказы</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/custom-select.css">
+    <link rel="stylesheet" href="./css/dotmenu.css">
+    <link rel="stylesheet" href="./css/reactstyle.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+<header style="position: relative;">
+    <div class="container-xl container-md container-sm container" style="height: 90px; ">
+        <div id="cookies"></div>
+        <nav class="navbar navbar-light navbar-expand-lg navbar-expand-md flex-grow-0 px-0 justify-content-between"><a
+                class="navbar-brand" href="/" style="max-width: 179px"><img src="./img/logo.png" alt="Catering logo"
+                                                                            style="width: 100%;"></a>
+
+            <button class="navbar-toggler pr-0 d-block d-md-none d-lg-none button-burger-for-click button-burger "
+                    type="button"
+                    onclick="$('.modal-burger').toggleClass('modal-burger-toggle'); $('.button-burger-for-click').toggleClass('button-burger')"
+                    style="border: none; outline: none;"></button>
+            <div class="col-lg-7 col-md-7 p-0 d-none d-md-flex d-lg-flex justify-content-center align-items-center">
+                <ul class="navbar-nav nav d-flex flex-grow-1 flex-row">
+                    <li class="nav-item ml-3 dropdown">
+                        <div class="nav-link text-main-color-dark px-0 navbar-size-14 dropdown-toggle"
+                             id="dropdown-admin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                             style="color: #232323; cursor: pointer">
+                            <img src="./img/admin-icon.svg" alt="" class="px-2">Адмін
+                        </div>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-admin" id="dropdown-buttons-admin" style="box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.15); border-radius: 4px; border: none;
+ min-width:650px; max-width: 745px; font-weight: 500; font-size: 14px;">
+                            <div class="row m-0">
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/Dishes">Список страв</a>
+
+                                </div>
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/Company/Setting">Налаштування</a>
+
+                                </div>
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/Service/IndexNew">Сервіси</a>
+
+                                </div>
+                            </div>
+                            <div class="row m-0">
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/Categories">Лист категорій</a>
+
+                                </div>
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/Account/Users">Користувачi</a>
+
+                                </div>
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/Service/Cards">UserCards</a>
+
+                                </div>
+                            </div>
+                            <div class="row m-0">
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/Ingredients">Інгредієнти</a>
+
+                                </div>
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/UserGroups">Групи Користувачiв</a>
+
+                                </div>
+                                <div class="col-sm-4 p-0"></div>
+                            </div>
+                            <div class="row m-0">
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/IngredientCategories">Категорії Інгрідієнта</a>
+
+                                </div>
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/UserSubGroups">Підгрупи користувачів</a>
+
+                                </div>
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/Report">Звiти</a>
+
+
+                                </div>
+                            </div>
+                            <div class="row m-0">
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/Complex">Комплекс</a>
+
+                                </div>
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/MassEmail">Розсилки email</a>
+
+                                </div>
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/CustomerOrders">Замовлення</a>
+
+                                </div>
+                            </div>
+                            <div class="row m-0">
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/DishKind">Вид</a>
+
+                                </div>
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/Home/FileBrowse">MediaFiles</a>
+
+                                </div>
+                                <div class="col-sm-4 p-0"></div>
+                            </div>
+                            <div class="row m-0">
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/DayDishes/ReactIndex">Меню на день</a>
+
+                                </div>
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/InfoMessage">Новини</a>
+
+                                </div>
+                                <div class="col-sm-4 p-0"></div>
+                            </div>
+                            <div class="row m-0">
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/Stock">Склад</a>
+
+                                </div>
+                                <div class="col-sm-4 p-0"></div>
+                                <div class="col-sm-4 p-0"></div>
+                            </div>
+                            <div class="row m-0">
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/Stock/ConsignmentStock">Склад/Залишки</a>
+
+                                </div>
+                                <div class="col-sm-4 p-0"></div>
+                                <div class="col-sm-4 p-0"></div>
+                            </div>
+                            <div class="row m-0">
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/Docs">Документи</a>
+
+                                </div>
+                                <div class="col-sm-4 p-0"></div>
+                                <div class="col-sm-4 p-0"></div>
+                            </div>
+                            <div class="row m-0">
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/Address">Адреси</a>
+
+                                </div>
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/Meals">Прийоми їжі</a>
+
+                                </div>
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/DeliveryPoint">Точка видачі</a>
+
+                                </div>
+                            </div>
+                            <div class="row m-0">
+                                <div class="col-sm-4 p-0">
+                                    <a class="dropdown-item" href="/Discount">Знижки</a>
+
+                                </div>
+                                <div class="col-sm-4 p-0"></div>
+                                <div class="col-sm-4 p-0"></div>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="nav-item ml-3 dropdown">
+                        <div class="nav-link text-main-color-dark px-0 navbar-size-14 dropdown-toggle"
+                             id="dropdown-userprofile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                             style="color: #232323; cursor: pointer">
+                            <img src="./img/profile-icon.svg" alt="" class="px-2">
+                            admin
+                        </div>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownUserMenuLink"
+                             id="dropdown-userprofile">
+                            <a class="dropdown-item" href="/Account/Update">Mої дані</a>
+                            <a class="dropdown-item" href="/Account/AddBalance">Поповнити Рахунок</a>
+
+                            <a id="selectcompany" class="dropdown-item"
+                               data-userid="27fb457f-8b4f-4a66-96ce-5e98ae2f1d91" href="#">Вибрати компанію</a>
+                            <a class="dropdown-item"
+                               href="https://docs.google.com/document/d/1CKrpRFWGrTRioJrZnfsXbI93wxxGkl3anwaZhaTUpWA/edit"
+                               target="_blank">FAQ</a>
+                        </div>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a class="nav-link text-main-color-dark px-0 navbar-size-14"
+                           style="color: #232323; cursor: pointer; font-size: 14px;" href="/MyOrders">
+                            <img src="./img/basket-icon.svg" alt="" class="px-2">Мої замовлення
+                        </a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a id="logoutLink" class="nav-link text-main-color-dark px-0 navbar-size-14"
+                           style="color: #232323; cursor: pointer; font-size: 14px;" href="/Account/LogOut">
+                            <img src="./img/logout-icon.svg" alt="" class="px-2">Вийти
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="modal-burger">
+
+    <div class="container d-flex flex-column flex-grow-1">
+        <nav class="navbar navbar-light navbar-expand-lg flex-grow-0 px-0"><a class="navbar-brand" href="/"
+                                                                              style="max-width: 179px">
+            <img src="./img/logo.png" alt="Catering logo" style="width: 100%;">
+        </a>
+            <button class="navbar-toggler pr-0 button-burger-for-click button-burger " type="button"
+                    onclick="$('.modal-burger').toggleClass('modal-burger-toggle'); $('.button-burger-for-click').toggleClass('button-burger')"
+                    style="border: none; outline: none;"></button>
+        </nav>
+        <div class="col-12 p-0 d-flex">
+            <ul class="navbar-nav nav">
+                <li class="nav-item ml-3 dropdown ">
+                    <div class="nav-link text-main-color-dark px-0 navbar-size-14 dropdown-toggle" id="dropdown-admin"
+                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                         style="color: #232323; cursor: pointer; font-weight: 600; font-size: 28px;">
+                        <img src="./img/admin-icon.svg" alt="" class="px-2">Адмін
+                    </div>
+                    <div class="dropdown-menu" aria-labelledby="dropdown-admin" id="dropdown-buttons-hover"
+                         style="box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.15); border-radius: 4px; border: none; max-width: 245px; font-weight: 500; font-size: 14px;">
+
+
+                        <a class="dropdown-item" href="/Dishes">Список страв</a>
+
+
+                        <a class="dropdown-item" href="/Company/Setting">Налаштування</a>
+
+
+                        <a class="dropdown-item" href="/Service/IndexNew">Сервіси</a>
+
+
+                        <a class="dropdown-item" href="/Categories">Лист категорій</a>
+
+
+                        <a class="dropdown-item" href="/Account/Users">Користувачi</a>
+
+
+                        <a class="dropdown-item" href="/Service/Cards">UserCards</a>
+
+
+                        <a class="dropdown-item" href="/Ingredients">Інгредієнти</a>
+
+
+                        <a class="dropdown-item" href="/UserGroups">Групи Користувачiв</a>
+
+
+                        <a class="dropdown-item" href="/IngredientCategories">Категорії Інгрідієнта</a>
+
+
+                        <a class="dropdown-item" href="/UserSubGroups">Підгрупи користувачів</a>
+
+
+                        <a class="dropdown-item" href="/Report">Звiти</a>
+
+
+                        <a class="dropdown-item" href="/Complex">Комплекс</a>
+
+
+                        <a class="dropdown-item" href="/MassEmail">Розсилки email</a>
+
+
+                        <a class="dropdown-item" href="/InfoMessage">Новини</a>
+
+
+                        <a class="dropdown-item" href="/CustomerOrders">Замовлення</a>
+
+
+                        <a class="dropdown-item" href="/DishKind">Вид</a>
+
+
+                        <a class="dropdown-item" href="/Home/FileBrowse">MediaFiles</a>
+
+
+                        <a class="dropdown-item" href="/DayDishes/ReactIndex">Меню на день</a>
+
+
+                        <a class="dropdown-item" href="/Stock">Склад</a>
+
+
+                        <a class="dropdown-item" href="/Stock/ConsignmentStock">Склад/Залишки</a>
+
+
+                        <a class="dropdown-item" href="/Docs">Документи</a>
+
+
+                        <a class="dropdown-item" href="/Address">Адреси</a>
+
+
+                        <a class="dropdown-item" href="/Discount">Знижки</a>
+
+
+                    </div>
+                </li>
+                <li class="nav-item ml-3 dropdown"><a
+                        class="nav-link dropdown-toggle text-main-color-dark px-0 navbar-size-14"
+                        style="color: #232323; cursor: pointer; font-weight: 600; font-size: 28px;" href="#"
+                        id="navbarDropdownUserMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                    <img src="./img/profile-icon.svg" alt="" class="px-2">
+                    admin
+                </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownUserMenuLink">
+                        <a class="dropdown-item" href="/Account/Update">Mої дані</a>
+                        <a class="dropdown-item" href="/Account/AddBalance">Поповнити Рахунок</a>
+
+                        <a id="selectcompany-1" class="dropdown-item" data-userid="27fb457f-8b4f-4a66-96ce-5e98ae2f1d91"
+                           href="#">Вибрати компанію</a>
+                        <a class="dropdown-item"
+                           href="https://docs.google.com/document/d/1CKrpRFWGrTRioJrZnfsXbI93wxxGkl3anwaZhaTUpWA/edit"
+                           target="_blank">FAQ</a>
+                    </div>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link text-main-color-dark px-0 navbar-size-14"
+                       style="color: #232323; cursor: pointer; font-weight: 600; font-size: 28px;" href="/MyOrders">
+                        <img src="./img/basket-icon.svg" alt="" class="px-2">Мої замовлення
+                    </a>
+                </li>
+                <li class="nav-item ml-3">
+                    <a id="logoutLink" class="nav-link text-main-color-dark px-0 navbar-size-14"
+                       style="color: #232323; cursor: pointer; font-weight: 600; font-size: 28px;"
+                       href="/Account/LogOut">
+                        <img src="./img/logout-icon.svg" alt="" class="px-2">Вийти
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div id="content">
+    <div class="container-xl container container-md container-sm container-lg">
+        <div class="col-12 align-content-center mr-md-auto px-0 d-flex justify-content-between flex-md-row flex-lg-row flex-column-reverse mt-3">
+            <div class="col-lg-9 col-md-9 col-12 d-flex flex-column p-0 mt-2">
+                <div class="select-dishesKind d-flex flex-column" style="height: 40px;">
+                    <div class="menucontainer">
+                        <div class="dots">
+                            <div class="clickcontainer"><span class="menuname">Меню</span>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <span class="menucurrent">MB Standard</span></div>
+                        <div class="menucursor"></div>
+                    </div>
+                </div>
+                <span class="change-color-grey change-weight" style="font-size: 16px;">Прийоми їжі:</span>
+                <div class="select-meal">
+                    <div class="btn-toolbar mb-3 d-flex" role="toolbar" aria-label="Toolbar with button groups"
+                         style="width: 100%;">
+                        <div class="btn-group mr-2 d-flex" role="group" aria-label="First group"
+                             style="width: 100%; flex-flow: row wrap;">
+                            <button type="button" class="btn btn-meal-active d-flex">Сніданок</button>
+                            <button type="button" class="btn btn-meal-exist d-flex">Обід</button>
+                            <button type="button" class="btn btn-meal-exist d-flex">Підвечірок</button>
+                            <button type="button" class="btn btn-meal-exist d-flex">Вечеря</button>
+                            <button type="button" class="btn btn-meal-notexist d-flex">Впродовж дня</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button"
+                    class="getDetails col-lg-3 col-md-3 pr-3 col-12 btn btn-xl btn-outline-danger align-self-end font-weight-bold d-flex justify-content-between"
+                    style="background: rgb(255, 255, 255); border-color: rgb(54, 194, 51); outline: none; height: 48px; color: rgb(54, 194, 51); display: flex; align-items: center; justify-content: space-evenly; font-size: 14px; text-transform: uppercase;">
+                <img src="../img/week-report.svg" alt=""><span class="d-flex align-content-center"
+                                                               style="margin-right: 23%;">Тижневий звіт</span></button>
+        </div>
+        <div id="days-of-week-carousel" class="carousel slide container px-0 order-carousel mt-3" data-ride="carousel">
+            <div class="carousel-inner" style="position: relative;">
+                <div class="carousel-item active"><input type="hidden" id="currentdate" data-val="true"
+                                                         data-val-required="The Int64 field is required."
+                                                         name="ms_since1970" value="1636902164738">
+                    <ul class="nav nav-tabs justify-content-lg-around justify-content-md-around justify-content-between weeks-tab px-3"
+                        id="weeks-tab" role="tablist">
+                        <li class="nav-item"><a class="nav-link day-of-week p-lg-0 p-md-0 nav-item nav-day active"
+                                                id="nav-tab-0" data-toggle="tab" href="#nav-content-0" role="tab"
+                                                aria-controls="nav-content-{link.index}" data-i="0"
+                                                aria-selected="false" style="width: 100%;">
+                            <div class="col-12 p-0 d-flex flex-lg-column flex-md-column flex-column-reverse date-container">
+                                <div class="col-12 d-lg-none d-md-none d-flex p-0 justify-content-center align-items-center arrow-down-mob"
+                                     style="min-width: 55px;"><img src="../img/mob-arrow-active.svg" alt=""></div>
+                                <div class="col-12 d-flex justify-content-center day-of" data-i="0">Пн</div>
+                                <div class="col-12 number-of d-md-block d-lg-block d-none shorttabdate"
+                                     style="font-size: 14px; font-family: Open-Sans, sans-serif;">29.11
+                                </div>
+                                <div class="col-12 month-rus month-rus__active d-lg-none d-md-none d-flex p-0 justify-content-center align-items-center date-day"
+                                     style="font-size: 14px; font-family: Open-Sans, sans-serif; min-width: 55px; line-height: 29px;">
+                                    29.11
+                                </div>
+                            </div>
+                        </a></li>
+                        <li class="nav-item"><a class="nav-link day-of-week p-lg-0 p-md-0 nav-item nav-day "
+                                                id="nav-tab-1" data-toggle="tab" href="#nav-content-1" role="tab"
+                                                aria-controls="nav-content-{link.index}" data-i="1"
+                                                aria-selected="false" style="width: 100%;">
+                            <div class="col-12 p-0 d-flex flex-lg-column flex-md-column flex-column-reverse date-container">
+                                <div class="col-12 d-lg-none d-md-none d-flex p-0 justify-content-center align-items-center arrow-down-mob"
+                                     style="min-width: 55px;"><img src="../img/mob-arrow-active.svg" alt=""></div>
+                                <div class="col-12 d-flex justify-content-center day-of" data-i="1">Вт</div>
+                                <div class="col-12 number-of d-md-block d-lg-block d-none shorttabdate"
+                                     style="font-size: 14px; font-family: Open-Sans, sans-serif;">30.11
+                                </div>
+                                <div class="col-12 month-rus month-rus__active d-lg-none d-md-none d-flex p-0 justify-content-center align-items-center date-day"
+                                     style="font-size: 14px; font-family: Open-Sans, sans-serif; min-width: 55px; line-height: 29px;">
+                                    30.11
+                                </div>
+                            </div>
+                        </a></li>
+                        <li class="nav-item"><a class="nav-link day-of-week p-lg-0 p-md-0 nav-item nav-day "
+                                                id="nav-tab-2" data-toggle="tab" href="#nav-content-2" role="tab"
+                                                aria-controls="nav-content-{link.index}" data-i="2"
+                                                aria-selected="false" style="width: 100%;">
+                            <div class="col-12 p-0 d-flex flex-lg-column flex-md-column flex-column-reverse date-container">
+                                <div class="col-12 d-lg-none d-md-none d-flex p-0 justify-content-center align-items-center arrow-down-mob"
+                                     style="min-width: 55px;"><img src="../img/mob-arrow-active.svg" alt=""></div>
+                                <div class="col-12 d-flex justify-content-center day-of" data-i="2">Ср</div>
+                                <div class="col-12 number-of d-md-block d-lg-block d-none shorttabdate"
+                                     style="font-size: 14px; font-family: Open-Sans, sans-serif;">01.12
+                                </div>
+                                <div class="col-12 month-rus month-rus__active d-lg-none d-md-none d-flex p-0 justify-content-center align-items-center date-day"
+                                     style="font-size: 14px; font-family: Open-Sans, sans-serif; min-width: 55px; line-height: 29px;">
+                                    01.12
+                                </div>
+                            </div>
+                        </a></li>
+                        <li class="nav-item"><a class="nav-link day-of-week p-lg-0 p-md-0 nav-item nav-day "
+                                                id="nav-tab-3" data-toggle="tab" href="#nav-content-3" role="tab"
+                                                aria-controls="nav-content-{link.index}" data-i="3"
+                                                aria-selected="false" style="width: 100%;">
+                            <div class="col-12 p-0 d-flex flex-lg-column flex-md-column flex-column-reverse date-container">
+                                <div class="col-12 d-lg-none d-md-none d-flex p-0 justify-content-center align-items-center arrow-down-mob"
+                                     style="min-width: 55px;"><img src="../img/mob-arrow-active.svg" alt=""></div>
+                                <div class="col-12 d-flex justify-content-center day-of" data-i="3">Чт</div>
+                                <div class="col-12 number-of d-md-block d-lg-block d-none shorttabdate"
+                                     style="font-size: 14px; font-family: Open-Sans, sans-serif;">02.12
+                                </div>
+                                <div class="col-12 month-rus month-rus__active d-lg-none d-md-none d-flex p-0 justify-content-center align-items-center date-day"
+                                     style="font-size: 14px; font-family: Open-Sans, sans-serif; min-width: 55px; line-height: 29px;">
+                                    02.12
+                                </div>
+                            </div>
+                        </a></li>
+                        <li class="nav-item"><a class="nav-link day-of-week p-lg-0 p-md-0 nav-item nav-day "
+                                                id="nav-tab-4" data-toggle="tab" href="#nav-content-4" role="tab"
+                                                aria-controls="nav-content-{link.index}" data-i="4"
+                                                aria-selected="false" style="width: 100%;">
+                            <div class="col-12 p-0 d-flex flex-lg-column flex-md-column flex-column-reverse date-container">
+                                <div class="col-12 d-lg-none d-md-none d-flex p-0 justify-content-center align-items-center arrow-down-mob"
+                                     style="min-width: 55px;"><img src="../img/mob-arrow-active.svg" alt=""></div>
+                                <div class="col-12 d-flex justify-content-center day-of" data-i="4">Пт</div>
+                                <div class="col-12 number-of d-md-block d-lg-block d-none shorttabdate"
+                                     style="font-size: 14px; font-family: Open-Sans, sans-serif;">03.12
+                                </div>
+                                <div class="col-12 month-rus month-rus__active d-lg-none d-md-none d-flex p-0 justify-content-center align-items-center date-day"
+                                     style="font-size: 14px; font-family: Open-Sans, sans-serif; min-width: 55px; line-height: 29px;">
+                                    03.12
+                                </div>
+                            </div>
+                        </a></li>
+                        <li class="nav-item"><a class="nav-link day-of-week p-lg-0 p-md-0 nav-item nav-day "
+                                                id="nav-tab-5" data-toggle="tab" href="#nav-content-5" role="tab"
+                                                aria-controls="nav-content-{link.index}" data-i="5"
+                                                aria-selected="false" style="width: 100%;">
+                            <div class="col-12 p-0 d-flex flex-lg-column flex-md-column flex-column-reverse date-container">
+                                <div class="col-12 d-lg-none d-md-none d-flex p-0 justify-content-center align-items-center arrow-down-mob"
+                                     style="min-width: 55px;"><img src="../img/mob-arrow-active.svg" alt=""></div>
+                                <div class="col-12 d-flex justify-content-center day-of" data-i="5">Сб</div>
+                                <div class="col-12 number-of d-md-block d-lg-block d-none shorttabdate"
+                                     style="font-size: 14px; font-family: Open-Sans, sans-serif;">04.12
+                                </div>
+                                <div class="col-12 month-rus month-rus__active d-lg-none d-md-none d-flex p-0 justify-content-center align-items-center date-day"
+                                     style="font-size: 14px; font-family: Open-Sans, sans-serif; min-width: 55px; line-height: 29px;">
+                                    04.12
+                                </div>
+                            </div>
+                        </a></li>
+                        <li class="nav-item"><a class="nav-link day-of-week p-lg-0 p-md-0 nav-item nav-day "
+                                                id="nav-tab-6" data-toggle="tab" href="#nav-content-6" role="tab"
+                                                aria-controls="nav-content-{link.index}" data-i="6"
+                                                aria-selected="false" style="width: 100%;">
+                            <div class="col-12 p-0 d-flex flex-lg-column flex-md-column flex-column-reverse date-container">
+                                <div class="col-12 d-lg-none d-md-none d-flex p-0 justify-content-center align-items-center arrow-down-mob"
+                                     style="min-width: 55px;"><img src="../img/mob-arrow-active.svg" alt=""></div>
+                                <div class="col-12 d-flex justify-content-center day-of" data-i="6">Вс</div>
+                                <div class="col-12 number-of d-md-block d-lg-block d-none shorttabdate"
+                                     style="font-size: 14px; font-family: Open-Sans, sans-serif;">05.12
+                                </div>
+                                <div class="col-12 month-rus month-rus__active d-lg-none d-md-none d-flex p-0 justify-content-center align-items-center date-day"
+                                     style="font-size: 14px; font-family: Open-Sans, sans-serif; min-width: 55px; line-height: 29px;">
+                                    05.12
+                                </div>
+                            </div>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <a class="carousel-control-prev d-lg-flex d-md-flex align-items-start mt-3 dayselectback"
+               href="#days-of-week-carousel" role="button" data-slide="prev" style="width: auto; z-index: 6;"><span
+                    class="carousel-control-prev-icon d-flex justify-content-start align-items-center"
+                    aria-hidden="true"
+                    style="width: 30px; height: 30px; border: 2px solid rgb(240, 94, 37); border-radius: 50%;"><div
+                    style="border-width: 4px 5px 4px 4px; border-style: solid; border-color: transparent rgb(240, 94, 37) transparent transparent; border-image: initial; display: block; width: 0px; height: 0px;"></div></span><span
+                    class="sr-only">Previous</span></a><a
+                class="carousel-control-next d-flex align-items-start mt-3 dayselectforward"
+                href="#days-of-week-carousel" role="button" data-slide="next"
+                style="width: auto; z-index: 6; max-height: 30px;"><span
+                class="carousel-control-next-icon d-flex justify-content-end align-items-center" aria-hidden="true"
+                style="width: 30px; height: 30px; border: 2px solid rgb(240, 94, 37); border-radius: 50%;"><div
+                style="border-width: 4px 4px 4px 5px; border-style: solid; border-color: transparent transparent transparent rgb(240, 94, 37); border-image: initial; display: block; width: 0px; height: 0px;"></div> </span><span
+                class="sr-only">Next</span></a>
+            <div class="col-12 p-0" style="margin-top: -105px; z-index: 10;"></div>
+            <div class="tab-content mt-lg-2 pt-lg-3 mt-md-2 pt-md-3 mt-1 pt-0" id="week-day-content"
+                 style="width: 100%;">
+                <div class="tab-pane fade show active" id="nav-content-0" role="tabpanel" aria-labelledby="nav-tab-0"
+                     style="min-height: 1000px;">
+                    <div class="container day-closed-msg"><h3> На цей день замовлення закритi. </h3></div>
+                    <div class="col-12 p-0 justify-content-center mt-4 d-flex">
+                        <div class="col-12 box-shadow-container position-relative brd-bot-line mb-3">
+                            <div class="col-12 p-0 d-flex flex-column br daycomplex-item"><span
+                                    class="h3 pt-lg-0 pt-md-0 pt-3 brd-bot-line-reverse pb-4 pb-md-0 pb-lg-0"
+                                    style="font-weight: 600; font-size: 18px; color: rgb(35, 35, 35);">Breakfast Standard MBM2</span>
+                                <div><span style="font-size: 16px; line-height: 16px; color: rgb(35, 35, 35);">Ціна за комплекс:</span><span
+                                        style="font-size: 16px; line-height: 16px; color: rgb(121, 121, 121);">55.00₴</span>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div class="col-12 p-0 d-flex flex-column"><span
+                                                class="h4 font-italic d-flex align-items-center pb-2 pb-lg-0 pb-md-0 mt-2"
+                                                style="font-size: 14px; line-height: 16px; color: rgb(121, 121, 121);">0 Блюдо</span>
+                                        </div>
+                                        <div class="complex-dish-item-container col-12 p-0 d-flex flex-lg-row flex-md-row align-items-md-center align-items-lg-center align-items-start pb-lg-2 pb-md-2 pb-3">
+                                            <div class="col-lg-1 col-md-2 col-2 px-0"><img
+                                                    class="complex-dish-item-image"
+                                                    src="/Pictures/GetPicture/2359?width=61&amp;height=61"
+                                                    alt="Image week dish" style="width: inherit; max-width: 61px;">
+                                            </div>
+                                            <div class="col-lg-11 p-0 pl-2 col-md-10 col-10 d-flex flex-lg-row flex-md-row flex-column align-items-lg-center align-items-md-center align-items-start justify-content-start">
+                                                <div class="col-lg-2 col-md-2 col-12 px-md-0 px-lg-0 bolder-change complex-dish-item-name"
+                                                     style="font-size: 16px;">Шакшука (m)
+                                                </div>
+                                                <div class="col-5 d-lg-block d-md-block d-none pr-3"
+                                                     style="font-size: 16px;">
+                                                    <div class="pl-4 complex-dish-item-description">Яйце куряче, олія
+                                                        соняшникова, сіль, кріп, помідори<p></p></div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2 col-12 d-flex justify-content-lg-start justify-content-md-start lighter-change"
+                                                     style="font-family: Open-Sans, sans-serif; font-size: 16px;"><span
+                                                        class="complex-dish-item-readyweight">150</span> <span
+                                                        class="d-inline d-md-none d-lg-none"></span><span
+                                                        class="d-inline d-md-none d-lg-none"></span></div>
+                                                <div class="col-lg-2 col-md-2 col-12 justify-content-center d-lg-flex d-sm-flex d-md-flex"
+                                                     style="font-family: Open-Sans, sans-serif; font-size: 16px;"><input
+                                                        id="15-1609-4987-comment" type="hidden" placeholder="Коментар"
+                                                        maxlength="100" class="form-control"></div>
+                                                <button class="col-5 d-flex d-md-none d-lg-none brn justify-content-start"
+                                                        type="button" data-toggle="modal"
+                                                        style="outline: none; border: none; color: rgb(54, 194, 51); font-size: 14px; background: transparent;">
+                                                    Склад &gt;
+                                                </button>
+                                                <div class="col-lg-1 col-md-1 col-12 d-flex justify-content-lg-start justify-content-md-start justify-content-end pr-4 pr-lg-0 pr-md-0">
+                                                    <label class="container-for-radio"><input
+                                                            class="custom-control-input dish-check" type="checkbox"
+                                                            checked=""><span class="checkmark-for-radio"></span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="complex-dish-item-container col-12 p-0 d-flex flex-lg-row flex-md-row align-items-md-center align-items-lg-center align-items-start pb-lg-2 pb-md-2 pb-3">
+                                            <div class="col-lg-1 col-md-2 col-2 px-0"><img
+                                                    class="complex-dish-item-image"
+                                                    src="/Pictures/GetPicture/2361?width=61&amp;height=61"
+                                                    alt="Image week dish" style="width: inherit; max-width: 61px;">
+                                            </div>
+                                            <div class="col-lg-11 p-0 pl-2 col-md-10 col-10 d-flex flex-lg-row flex-md-row flex-column align-items-lg-center align-items-md-center align-items-start justify-content-start">
+                                                <div class="col-lg-2 col-md-2 col-12 px-md-0 px-lg-0 bolder-change complex-dish-item-name"
+                                                     style="font-size: 16px;">Вівсяна каша з молоком та родзинками (m)
+                                                </div>
+                                                <div class="col-5 d-lg-block d-md-block d-none pr-3"
+                                                     style="font-size: 16px;">
+                                                    <div class="pl-4 complex-dish-item-description">Крупа вівсяна, сіль,
+                                                        цукор, родзинки, молоко, цукор ванільний, масло вершкове<p></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2 col-12 d-flex justify-content-lg-start justify-content-md-start lighter-change"
+                                                     style="font-family: Open-Sans, sans-serif; font-size: 16px;"><span
+                                                        class="complex-dish-item-readyweight">200</span> <span
+                                                        class="d-inline d-md-none d-lg-none"></span><span
+                                                        class="d-inline d-md-none d-lg-none"></span></div>
+                                                <div class="col-lg-2 col-md-2 col-12 justify-content-center d-lg-flex d-sm-flex d-md-flex"
+                                                     style="font-family: Open-Sans, sans-serif; font-size: 16px;"><input
+                                                        id="15-1609-4987-comment" type="hidden" placeholder="Коментар"
+                                                        maxlength="100" class="form-control"></div>
+                                                <button class="col-5 d-flex d-md-none d-lg-none brn justify-content-start"
+                                                        type="button" data-toggle="modal"
+                                                        style="outline: none; border: none; color: rgb(54, 194, 51); font-size: 14px; background: transparent;">
+                                                    Склад &gt;
+                                                </button>
+                                                <div class="col-lg-1 col-md-1 col-12 d-flex justify-content-lg-start justify-content-md-start justify-content-end pr-4 pr-lg-0 pr-md-0">
+                                                    <label class="container-for-radio"><input
+                                                            class="custom-control-input dish-check"
+                                                            type="checkbox"><span
+                                                            class="checkmark-for-radio"></span></label></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div class="col-12 p-0 d-flex flex-column"><span
+                                                class="h4 font-italic d-flex align-items-center pb-2 pb-lg-0 pb-md-0 mt-2"
+                                                style="font-size: 14px; line-height: 16px; color: rgb(121, 121, 121);">1 Блюдо</span>
+                                        </div>
+                                        <div class="complex-dish-item-container col-12 p-0 d-flex flex-lg-row flex-md-row align-items-md-center align-items-lg-center align-items-start pb-lg-2 pb-md-2 pb-3">
+                                            <div class="col-lg-1 col-md-2 col-2 px-0"><img
+                                                    class="complex-dish-item-image"
+                                                    src="/Pictures/GetPicture/2953?width=61&amp;height=61"
+                                                    alt="Image week dish" style="width: inherit; max-width: 61px;">
+                                            </div>
+                                            <div class="col-lg-11 p-0 pl-2 col-md-10 col-10 d-flex flex-lg-row flex-md-row flex-column align-items-lg-center align-items-md-center align-items-start justify-content-start">
+                                                <div class="col-lg-2 col-md-2 col-12 px-md-0 px-lg-0 bolder-change complex-dish-item-name"
+                                                     style="font-size: 16px;">Без хліба
+                                                </div>
+                                                <div class="col-5 d-lg-block d-md-block d-none pr-3"
+                                                     style="font-size: 16px;">
+                                                    <div class="pl-4 complex-dish-item-description"><p></p></div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2 col-12 d-flex justify-content-lg-start justify-content-md-start lighter-change"
+                                                     style="font-family: Open-Sans, sans-serif; font-size: 16px;"><span
+                                                        class="complex-dish-item-readyweight">0</span> <span
+                                                        class="d-inline d-md-none d-lg-none"></span><span
+                                                        class="d-inline d-md-none d-lg-none"></span></div>
+                                                <div class="col-lg-2 col-md-2 col-12 justify-content-center d-lg-flex d-sm-flex d-md-flex"
+                                                     style="font-family: Open-Sans, sans-serif; font-size: 16px;"><input
+                                                        id="15-1609-4987-comment" type="hidden" placeholder="Коментар"
+                                                        maxlength="100" class="form-control"></div>
+                                                <button class="col-5 d-flex d-md-none d-lg-none brn justify-content-start"
+                                                        type="button" data-toggle="modal"
+                                                        style="outline: none; border: none; color: rgb(54, 194, 51); font-size: 14px; background: transparent;">
+                                                    Склад &gt;
+                                                </button>
+                                                <div class="col-lg-1 col-md-1 col-12 d-flex justify-content-lg-start justify-content-md-start justify-content-end pr-4 pr-lg-0 pr-md-0">
+                                                    <label class="container-for-radio"><input
+                                                            class="custom-control-input dish-check" type="checkbox"
+                                                            checked=""><span class="checkmark-for-radio"></span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="complex-dish-item-container col-12 p-0 d-flex flex-lg-row flex-md-row align-items-md-center align-items-lg-center align-items-start pb-lg-2 pb-md-2 pb-3">
+                                            <div class="col-lg-1 col-md-2 col-2 px-0"><img
+                                                    class="complex-dish-item-image"
+                                                    src="/Pictures/GetPicture/3335?width=61&amp;height=61"
+                                                    alt="Image week dish" style="width: inherit; max-width: 61px;">
+                                            </div>
+                                            <div class="col-lg-11 p-0 pl-2 col-md-10 col-10 d-flex flex-lg-row flex-md-row flex-column align-items-lg-center align-items-md-center align-items-start justify-content-start">
+                                                <div class="col-lg-2 col-md-2 col-12 px-md-0 px-lg-0 bolder-change complex-dish-item-name"
+                                                     style="font-size: 16px;">Хліб з вершковим маслом, 30
+                                                </div>
+                                                <div class="col-5 d-lg-block d-md-block d-none pr-3"
+                                                     style="font-size: 16px;">
+                                                    <div class="pl-4 complex-dish-item-description">Склад: борошно
+                                                        пшеничне, борошно житне, борошно цільнозернове, жорнового
+                                                        помолу, висівки жорнові,закваска світла, сіль, цукор, вершкове
+                                                        масло КБЖВ: 3833.3 кк )16023 кДж) 58\228\384
+                                                        <p></p></div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2 col-12 d-flex justify-content-lg-start justify-content-md-start lighter-change"
+                                                     style="font-family: Open-Sans, sans-serif; font-size: 16px;"><span
+                                                        class="complex-dish-item-readyweight">30</span> <span
+                                                        class="d-inline d-md-none d-lg-none"></span><span
+                                                        class="d-inline d-md-none d-lg-none"></span></div>
+                                                <div class="col-lg-2 col-md-2 col-12 justify-content-center d-lg-flex d-sm-flex d-md-flex"
+                                                     style="font-family: Open-Sans, sans-serif; font-size: 16px;"><input
+                                                        id="15-1609-4987-comment" type="hidden" placeholder="Коментар"
+                                                        maxlength="100" class="form-control"></div>
+                                                <button class="col-5 d-flex d-md-none d-lg-none brn justify-content-start"
+                                                        type="button" data-toggle="modal"
+                                                        style="outline: none; border: none; color: rgb(54, 194, 51); font-size: 14px; background: transparent;">
+                                                    Склад &gt;
+                                                </button>
+                                                <div class="col-lg-1 col-md-1 col-12 d-flex justify-content-lg-start justify-content-md-start justify-content-end pr-4 pr-lg-0 pr-md-0">
+                                                    <label class="container-for-radio"><input
+                                                            class="custom-control-input dish-check"
+                                                            type="checkbox"><span
+                                                            class="checkmark-for-radio"></span></label></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div class="col-12 p-0 d-flex flex-column"><span
+                                                class="h4 font-italic d-flex align-items-center pb-2 pb-lg-0 pb-md-0 mt-2"
+                                                style="font-size: 14px; line-height: 16px; color: rgb(121, 121, 121);">2 Блюдо</span>
+                                        </div>
+                                        <div class="complex-dish-item-container col-12 p-0 d-flex flex-lg-row flex-md-row align-items-md-center align-items-lg-center align-items-start pb-lg-2 pb-md-2 pb-3">
+                                            <div class="col-lg-1 col-md-2 col-2 px-0"><img
+                                                    class="complex-dish-item-image"
+                                                    src="/Pictures/GetPicture/2375?width=61&amp;height=61"
+                                                    alt="Image week dish" style="width: inherit; max-width: 61px;">
+                                            </div>
+                                            <div class="col-lg-11 p-0 pl-2 col-md-10 col-10 d-flex flex-lg-row flex-md-row flex-column align-items-lg-center align-items-md-center align-items-start justify-content-start">
+                                                <div class="col-lg-2 col-md-2 col-12 px-md-0 px-lg-0 bolder-change complex-dish-item-name"
+                                                     style="font-size: 16px;">Чай зелений з м'ятою (m)
+                                                </div>
+                                                <div class="col-5 d-lg-block d-md-block d-none pr-3"
+                                                     style="font-size: 16px;">
+                                                    <div class="pl-4 complex-dish-item-description">Склад: чай зелений,
+                                                        м'ята, цукор<p></p></div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2 col-12 d-flex justify-content-lg-start justify-content-md-start lighter-change"
+                                                     style="font-family: Open-Sans, sans-serif; font-size: 16px;"><span
+                                                        class="complex-dish-item-readyweight">200</span> <span
+                                                        class="d-inline d-md-none d-lg-none"></span><span
+                                                        class="d-inline d-md-none d-lg-none"></span></div>
+                                                <div class="col-lg-2 col-md-2 col-12 justify-content-center d-lg-flex d-sm-flex d-md-flex"
+                                                     style="font-family: Open-Sans, sans-serif; font-size: 16px;"><input
+                                                        id="15-1609-4987-comment" type="hidden" placeholder="Коментар"
+                                                        maxlength="100" class="form-control"></div>
+                                                <button class="col-5 d-flex d-md-none d-lg-none brn justify-content-start"
+                                                        type="button" data-toggle="modal"
+                                                        style="outline: none; border: none; color: rgb(54, 194, 51); font-size: 14px; background: transparent;">
+                                                    Склад &gt;
+                                                </button>
+                                                <div class="col-lg-1 col-md-1 col-12 d-flex justify-content-lg-start justify-content-md-start justify-content-end pr-4 pr-lg-0 pr-md-0">
+                                                    <label class="container-for-radio"><input
+                                                            class="custom-control-input dish-check" type="checkbox"
+                                                            checked=""><span class="checkmark-for-radio"></span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="complex-dish-item-container col-12 p-0 d-flex flex-lg-row flex-md-row align-items-md-center align-items-lg-center align-items-start pb-lg-2 pb-md-2 pb-3">
+                                            <div class="col-lg-1 col-md-2 col-2 px-0"><img
+                                                    class="complex-dish-item-image"
+                                                    src="/Pictures/GetPicture/2956?width=61&amp;height=61"
+                                                    alt="Image week dish" style="width: inherit; max-width: 61px;">
+                                            </div>
+                                            <div class="col-lg-11 p-0 pl-2 col-md-10 col-10 d-flex flex-lg-row flex-md-row flex-column align-items-lg-center align-items-md-center align-items-start justify-content-start">
+                                                <div class="col-lg-2 col-md-2 col-12 px-md-0 px-lg-0 bolder-change complex-dish-item-name"
+                                                     style="font-size: 16px;">Без напою
+                                                </div>
+                                                <div class="col-5 d-lg-block d-md-block d-none pr-3"
+                                                     style="font-size: 16px;">
+                                                    <div class="pl-4 complex-dish-item-description"><p></p></div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2 col-12 d-flex justify-content-lg-start justify-content-md-start lighter-change"
+                                                     style="font-family: Open-Sans, sans-serif; font-size: 16px;"><span
+                                                        class="complex-dish-item-readyweight">0</span> <span
+                                                        class="d-inline d-md-none d-lg-none"></span><span
+                                                        class="d-inline d-md-none d-lg-none"></span></div>
+                                                <div class="col-lg-2 col-md-2 col-12 justify-content-center d-lg-flex d-sm-flex d-md-flex"
+                                                     style="font-family: Open-Sans, sans-serif; font-size: 16px;"><input
+                                                        id="15-1609-4987-comment" type="hidden" placeholder="Коментар"
+                                                        maxlength="100" class="form-control"></div>
+                                                <button class="col-5 d-flex d-md-none d-lg-none brn justify-content-start"
+                                                        type="button" data-toggle="modal"
+                                                        style="outline: none; border: none; color: rgb(54, 194, 51); font-size: 14px; background: transparent;">
+                                                    Склад &gt;
+                                                </button>
+                                                <div class="col-lg-1 col-md-1 col-12 d-flex justify-content-lg-start justify-content-md-start justify-content-end pr-4 pr-lg-0 pr-md-0">
+                                                    <label class="container-for-radio"><input
+                                                            class="custom-control-input dish-check"
+                                                            type="checkbox"><span
+                                                            class="checkmark-for-radio"></span></label></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 p-0 justify-content-center mt-4 d-flex">
+                        <div class="container">
+                            <div class="col-12 box-shadow-container position-relative brd-bot-line mb-3">
+                                <div class="col-12 p-0 justify-content-center mt-4 d-flex">
+                                    <div class="container">
+                                        <div class="col-12 box-shadow-container position-relative brd-bot-line mb-3">
+                                            <span class="h3 pt-lg-0 pt-md-0 pt-3 brd-bot-line-reverse pb-4 pb-md-0 pb-lg-0"
+                                                  style="font-weight: 600; font-size: 18px; color: rgb(35, 35, 35);">Другий сніданок: фрукти</span>
+                                        </div>
+                                        <div class="complex-dish-item-container col-12 p-0 d-flex flex-lg-row flex-md-row align-items-md-center align-items-lg-center align-items-start pb-lg-2 pb-md-2 pb-3">
+                                            <div class="col-lg-1 col-md-2 col-2 px-0"><img
+                                                    class="complex-dish-item-image"
+                                                    src="/Pictures/GetPicture/1110?width=61&amp;height=61"
+                                                    alt="Image week dish" style="width: inherit; max-width: 61px;">
+                                            </div>
+                                            <div class="col-lg-11 p-0 pl-2 col-md-10 col-10 d-flex flex-lg-row flex-md-row flex-column align-items-lg-center align-items-md-center align-items-start justify-content-start">
+                                                <div class="col-lg-2 col-md-2 col-12 px-md-0 px-lg-0 bolder-change complex-dish-item-name"
+                                                     style="font-size: 16px;">Мандарин, 100
+                                                </div>
+                                                <div class="col-5 d-lg-block d-md-block d-none pr-3"
+                                                     style="font-size: 12px;">
+                                                    <div class="pl-4 ">Склад: мандарин</div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2 col-12  "
+                                                     style="font-family: Open-Sans, sans-serif; font-size: 14px;"><span
+                                                        class="d-md-block p-0">1 шт. /</span><span
+                                                        class="d-md-block p-0"></span><span class="d-md-block p-0">13.00₴</span>
+                                                </div>
+                                                <button class="col-5 d-flex d-md-none d-lg-none brn justify-content-start"
+                                                        type="button" data-toggle="modal" data-target="#dish-stock"
+                                                        style="outline: none; border: none; color: rgb(54, 194, 51); font-size: 14px; background: transparent;">
+                                                    Склад &gt;
+                                                </button>
+                                                <div class="col-lg-2 col-md-3 col-12 justify-content-start d-flex"
+                                                     style="font-family: Open-Sans, sans-serif; font-size: 16px;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="complex-dish-item-container col-12 p-0 d-flex flex-lg-row flex-md-row align-items-md-center align-items-lg-center align-items-start pb-lg-2 pb-md-2 pb-3">
+                                            <div class="col-lg-1 col-md-2 col-2 px-0"><img
+                                                    class="complex-dish-item-image"
+                                                    src="/Pictures/GetPicture/2878?width=61&amp;height=61"
+                                                    alt="Image week dish" style="width: inherit; max-width: 61px;">
+                                            </div>
+                                            <div class="col-lg-11 p-0 pl-2 col-md-10 col-10 d-flex flex-lg-row flex-md-row flex-column align-items-lg-center align-items-md-center align-items-start justify-content-start">
+                                                <div class="col-lg-2 col-md-2 col-12 px-md-0 px-lg-0 bolder-change complex-dish-item-name"
+                                                     style="font-size: 16px;">Яблуко свіже, 150
+                                                </div>
+                                                <div class="col-5 d-lg-block d-md-block d-none pr-3"
+                                                     style="font-size: 12px;">
+                                                    <div class="pl-4 "></div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2 col-12  "
+                                                     style="font-family: Open-Sans, sans-serif; font-size: 14px;"><span
+                                                        class="d-md-block p-0">1 шт. /</span><span
+                                                        class="d-md-block p-0"></span><span class="d-md-block p-0">10.00₴</span>
+                                                </div>
+                                                <button class="col-5 d-flex d-md-none d-lg-none brn justify-content-start"
+                                                        type="button" data-toggle="modal" data-target="#dish-stock"
+                                                        style="outline: none; border: none; color: rgb(54, 194, 51); font-size: 14px; background: transparent;">
+                                                    Склад &gt;
+                                                </button>
+                                                <div class="col-lg-2 col-md-3 col-12 justify-content-start d-flex"
+                                                     style="font-family: Open-Sans, sans-serif; font-size: 16px;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="complex-dish-item-container col-12 p-0 d-flex flex-lg-row flex-md-row align-items-md-center align-items-lg-center align-items-start pb-lg-2 pb-md-2 pb-3">
+                                            <div class="col-lg-1 col-md-2 col-2 px-0"><img
+                                                    class="complex-dish-item-image"
+                                                    src="/Pictures/GetPicture/3434?width=61&amp;height=61"
+                                                    alt="Image week dish" style="width: inherit; max-width: 61px;">
+                                            </div>
+                                            <div class="col-lg-11 p-0 pl-2 col-md-10 col-10 d-flex flex-lg-row flex-md-row flex-column align-items-lg-center align-items-md-center align-items-start justify-content-start">
+                                                <div class="col-lg-2 col-md-2 col-12 px-md-0 px-lg-0 bolder-change complex-dish-item-name"
+                                                     style="font-size: 16px;">Банан свіжий, 150
+                                                </div>
+                                                <div class="col-5 d-lg-block d-md-block d-none pr-3"
+                                                     style="font-size: 12px;">
+                                                    <div class="pl-4 "></div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2 col-12  "
+                                                     style="font-family: Open-Sans, sans-serif; font-size: 14px;"><span
+                                                        class="d-md-block p-0">1 шт. /</span><span
+                                                        class="d-md-block p-0"></span><span class="d-md-block p-0">12.00₴</span>
+                                                </div>
+                                                <button class="col-5 d-flex d-md-none d-lg-none brn justify-content-start"
+                                                        type="button" data-toggle="modal" data-target="#dish-stock"
+                                                        style="outline: none; border: none; color: rgb(54, 194, 51); font-size: 14px; background: transparent;">
+                                                    Склад &gt;
+                                                </button>
+                                                <div class="col-lg-2 col-md-3 col-12 justify-content-start d-flex"
+                                                     style="font-family: Open-Sans, sans-serif; font-size: 16px;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="complex-dish-item-container col-12 p-0 d-flex flex-lg-row flex-md-row align-items-md-center align-items-lg-center align-items-start pb-lg-2 pb-md-2 pb-3">
+                                            <div class="col-lg-1 col-md-2 col-2 px-0"><img
+                                                    class="complex-dish-item-image"
+                                                    src="/Pictures/GetPicture/3912?width=61&amp;height=61"
+                                                    alt="Image week dish" style="width: inherit; max-width: 61px;">
+                                            </div>
+                                            <div class="col-lg-11 p-0 pl-2 col-md-10 col-10 d-flex flex-lg-row flex-md-row flex-column align-items-lg-center align-items-md-center align-items-start justify-content-start">
+                                                <div class="col-lg-2 col-md-2 col-12 px-md-0 px-lg-0 bolder-change complex-dish-item-name"
+                                                     style="font-size: 16px;">Фруктове пюре зі шматочками фруктів, 100
+                                                </div>
+                                                <div class="col-5 d-lg-block d-md-block d-none pr-3"
+                                                     style="font-size: 12px;">
+                                                    <div class="pl-4 ">Склад: банан, яблуко, персик ш/з, ананас ш/з,
+                                                        манго ш/з
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2 col-12  "
+                                                     style="font-family: Open-Sans, sans-serif; font-size: 14px;"><span
+                                                        class="d-md-block p-0">1 шт. /</span><span
+                                                        class="d-md-block p-0"></span><span class="d-md-block p-0">30.00₴</span>
+                                                </div>
+                                                <button class="col-5 d-flex d-md-none d-lg-none brn justify-content-start"
+                                                        type="button" data-toggle="modal" data-target="#dish-stock"
+                                                        style="outline: none; border: none; color: rgb(54, 194, 51); font-size: 14px; background: transparent;">
+                                                    Склад &gt;
+                                                </button>
+                                                <div class="col-lg-2 col-md-3 col-12 justify-content-start d-flex"
+                                                     style="font-family: Open-Sans, sans-serif; font-size: 16px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="nav-content-1" role="tabpanel" aria-labelledby="nav-tab-1"
+                     style="min-height: 1000px;">
+                    <div class="container day-closed-msg"><h3> На цей день замовлення закритi. </h3></div>
+                </div>
+                <div class="tab-pane fade " id="nav-content-2" role="tabpanel" aria-labelledby="nav-tab-2"
+                     style="min-height: 1000px;">
+                    <div class="container day-closed-msg"><h3> На цей день замовлення закритi. </h3></div>
+                </div>
+                <div class="tab-pane fade " id="nav-content-3" role="tabpanel" aria-labelledby="nav-tab-3"
+                     style="min-height: 1000px;">
+                    <div class="container day-closed-msg"><h3> На цей день замовлення закритi. </h3></div>
+                </div>
+                <div class="tab-pane fade " id="nav-content-4" role="tabpanel" aria-labelledby="nav-tab-4"
+                     style="min-height: 1000px;">
+                    <div class="container day-closed-msg"><h3> На цей день замовлення закритi. </h3></div>
+                </div>
+                <div class="tab-pane fade " id="nav-content-5" role="tabpanel" aria-labelledby="nav-tab-5"
+                     style="min-height: 1000px;">
+                    <div class="container day-closed-msg"><h3> На цей день замовлення закритi. </h3></div>
+                </div>
+                <div class="tab-pane fade " id="nav-content-6" role="tabpanel" aria-labelledby="nav-tab-6"
+                     style="min-height: 1000px;">
+                    <div class="container day-closed-msg"><h3> На цей день замовлення закритi. </h3></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal show" id="ModalPopUp" role="dialog" aria-modal="true"
+         style="background: rgba(200, 200, 200, 0.5);display: block;">
+        <div class="modal-dialog " style="width: 100%; min-width: 100%;">
+            <div class="modal-content" style="height: 640px;">
+                <div class="modal-header" style="height: 44px;"><h5 class="modal-title" style="color: rgb(33, 37, 41);">
+                    Звіт</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">X</span></button>
+                </div>
+                <div class="modal-body" style="height: 514px;">
+                    <div style="overflow-y: auto; height: 100%; margin: 0px; padding: 0px;">
+
+
+                        <style>
+                            #modal-body {
+                                max-width: 966px;
+                            }
+
+                            #modal-body * {
+                                box-sizing: border-box;
+                            }
+
+                            #modal-body .btn {
+                                display: inline-block;
+                                font-weight: 400;
+                                color: #212529;
+                                text-align: center;
+                                vertical-align: middle;
+                                -webkit-user-select: none;
+                                -moz-user-select: none;
+                                -ms-user-select: none;
+                                user-select: none;
+                                background-color: transparent;
+                                border: 1px solid transparent;
+                                padding: .375rem .75rem;
+                                font-size: 1rem;
+                                line-height: 1.5;
+                                border-radius: .25rem;
+                                transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                            }
+
+                            #modal-body .btn-outline-danger {
+                                color: #dc3545;
+                                border-color: #dc3545;
+                            }
+
+                            #modal-body .btn:not(:disabled):not(.disabled) {
+                                cursor: pointer;
+                            }
+
+                            #modal-body .row {
+                                display: -ms-flexbox;
+                                display: flex;
+                                -ms-flex-wrap: wrap;
+                                flex-wrap: wrap;
+                                margin-right: -15px;
+                                margin-left: -15px;
+                            }
+
+                            #modal-body .col, #modal-body .col-1, #modal-body .col-10, #modal-body .col-11, #modal-body .col-12, #modal-body .col-2, #modal-body .col-3, #modal-body .col-4, #modal-body .col-5, #modal-body .col-6, #modal-body .col-7, #modal-body .col-8, #modal-body .col-9, #modal-body .col-auto, #modal-body .col-lg, #modal-body .col-lg-1, #modal-body .col-lg-10, #modal-body .col-lg-11, #modal-body .col-lg-12, #modal-body .col-lg-2, #modal-body .col-lg-3, #modal-body .col-lg-4, #modal-body .col-lg-5, #modal-body .col-lg-6, #modal-body .col-lg-7, #modal-body .col-lg-8, #modal-body .col-lg-9, #modal-body .col-lg-auto, #modal-body .col-md, #modal-body .col-md-1, #modal-body .col-md-10, #modal-body .col-md-11, #modal-body .col-md-12, #modal-body .col-md-2, #modal-body .col-md-3, #modal-body .col-md-4, #modal-body .col-md-5, #modal-body .col-md-6, #modal-body .col-md-7, #modal-body .col-md-8, #modal-body .col-md-9, #modal-body .col-md-auto, #modal-body .col-sm, #modal-body .col-sm-1, #modal-body .col-sm-10, #modal-body .col-sm-11, #modal-body .col-sm-12, #modal-body .col-sm-2, #modal-body .col-sm-3, #modal-body .col-sm-4, #modal-body .col-sm-5, .col-sm-6, #modal-body .col-sm-7, #modal-body .col-sm-8, #modal-body .col-sm-9, #modal-body .col-sm-auto, #modal-body .col-xl, #modal-body .col-xl-1, #modal-body .col-xl-10, #modal-body .col-xl-11, #modal-body .col-xl-12, #modal-body .col-xl-2, #modal-body .col-xl-3, #modal-body .col-xl-4, #modal-body .col-xl-5, #modal-body .col-xl-6, #modal-body .col-xl-7, #modal-body .col-xl-8, #modal-body .col-xl-9, #modal-body .col-xl-auto {
+                                position: relative;
+                                width: 100%;
+                                padding-right: 15px;
+                                padding-left: 15px;
+                            }
+
+                            #modal-body .col-2 {
+                                -ms-flex: 0 0 16.666667%;
+                                flex: 0 0 16.666667%;
+                                max-width: 16.666667%;
+                            }
+
+                            #modal-body .col-4 {
+                                -ms-flex: 0 0 33.333333%;
+                                flex: 0 0 33.333333%;
+                                max-width: 33.333333%;
+                            }
+
+                            #modal-body .col-6 {
+                                -ms-flex: 0 0 50%;
+                                flex: 0 0 50%;
+                                max-width: 50%;
+                            }
+
+                            #modal-body .col-7 {
+                                -ms-flex: 0 0 58.333333%;
+                                flex: 0 0 58.333333%;
+                                max-width: 58.333333%;
+                            }
+
+                            #modal-body .col-12 {
+                                -ms-flex: 0 0 100%;
+                                flex: 0 0 100%;
+                                max-width: 100%;
+                            }
+
+                            #modal-body .d-flex {
+                                display: -ms-flexbox !important;
+                                display: flex !important;
+                            }
+
+                            #modal-body .flex-column {
+                                -ms-flex-direction: column !important;
+                                flex-direction: column !important;
+                            }
+
+                            #modal-body .flex-row {
+                                -ms-flex-direction: row !important;
+                                flex-direction: row !important;
+                            }
+
+                            #modal-body .align-content-center {
+                                -ms-flex-line-pack: center !important;
+                                align-content: center !important;
+                            }
+
+                            #modal-body .align-self-center {
+                                -ms-flex-item-align: center !important;
+                                align-self: center !important;
+                            }
+
+                            #modal-body .align-items-center {
+                                -ms-flex-align: center !important;
+                                align-items: center !important;
+                            }
+
+                            #modal-body .justify-content-start {
+                                -ms-flex-pack: start !important;
+                                justify-content: flex-start !important;
+                            }
+
+                            #modal-body .justify-content-between {
+                                -ms-flex-pack: justify !important;
+                                justify-content: space-between !important;
+                            }
+
+                            #modal-body .justify-content-around {
+                                -ms-flex-pack: distribute !important;
+                                justify-content: space-around !important;
+                            }
+
+                            #modal-body .justify-content-end {
+                                -ms-flex-pack: end !important;
+                                justify-content: flex-end !important;
+                            }
+
+                            #modal-body .order-active {
+                                background: #F1FFF1;
+                                border-left: 4px solid #36C233;
+                                font-weight: bold;
+                            }
+
+                            #modal-body .order-active__no-order {
+                                background: #FFF2F2;
+                                border-left: 4px solid #FF6666;
+                                font-weight: normal;
+                            }
+
+                            #modal-body .brd-bot-line-reverse {
+                                border-bottom: none;
+                            }
+
+                            #modal-body .change-color-grey {
+                                color: #797979;
+                            }
+
+                            #modal-body .change-weight {
+                                font-weight: normal;
+                            }
+
+                            #modal-body .p-0 {
+                                padding: 0 !important;
+                            }
+
+                            #modal-body .pl-0, #modal-body .px-0 {
+                                padding-left: 0 !important;
+                            }
+
+                            #modal-body .pr-0, #modal-body .px-0 {
+                                padding-right: 0 !important;
+                            }
+
+                            #modal-body .pb-2, #modal-body .py-2 {
+                                padding-bottom: .5rem !important;
+                            }
+
+                            #modal-body .pl-3, #modal-body .px-3 {
+                                padding-left: 1rem !important;
+                            }
+
+                            #modal-body .pr-3, #modal-body .px-3 {
+                                padding-right: 1rem !important;
+                            }
+
+                            #modal-body .ml-0, #modal-body .mx-0 {
+                                margin-left: 0 !important;
+                            }
+
+                            #modal-body .ml-4, #modal-body .mx-4 {
+                                margin-left: 1.5rem !important;
+                            }
+
+                            #modal-body .mr-0, #modal-body .mx-0 {
+                                margin-right: 0 !important;
+                            }
+
+                            #modal-body .mb-1, #modal-body .my-1 {
+                                margin-bottom: .25rem !important;
+                            }
+
+                            #modal-body .mt-1, #modal-body .my-1 {
+                                margin-top: .25rem !important;
+                            }
+
+                            #modal-body .mb-2, #modal-body .my-2 {
+                                margin-bottom: .5rem !important;
+                            }
+
+                            #modal-body .mb-3, #modal-body .my-3 {
+                                margin-bottom: 1rem !important;
+                            }
+
+                            #modal-body .mt-2, #modal-body .my-2 {
+                                margin-top: .5rem !important;
+                            }
+
+                            #modal-body .mt-3, #modal-body .my-3 {
+                                margin-top: 1rem !important;
+                            }
+
+                            #modal-body .mt-5, #modal-body .my-5 {
+                                margin-top: 3rem !important;
+                            }
+
+                            #modal-body .font-weight-bold {
+                                font-weight: 700 !important;
+                            }
+
+                            #modal-body .w-100 {
+                                width: 100% !important;
+                            }
+
+                            #modal-body .d-none {
+                                display: none !important;
+                            }
+
+                            #modal-body .d-inline {
+                                display: inline !important;
+                            }
+
+                            #modal-body .brd-bot-line-reverse {
+                                border-bottom: none;
+                            }
+
+
+                            @media (min-width: 576px) {
+                                #modal-body .d-sm-none {
+                                    display: none !important;
+                                }
+
+                                #modal-body .col-sm-6 {
+                                    -ms-flex: 0 0 50%;
+                                    flex: 0 0 50%;
+                                    max-width: 50%;
+                                }
+                            }
+
+                            @media (min-width: 768px) {
+
+                                #modal-body .flex-md-row {
+                                    -ms-flex-direction: row !important;
+                                    flex-direction: row !important;
+                                }
+
+                                #modal-body .justify-content-md-start {
+                                    -ms-flex-pack: start !important;
+                                    justify-content: flex-start !important;
+                                }
+
+                                #modal-body .justify-content-md-between {
+                                    -ms-flex-pack: justify !important;
+                                    justify-content: space-between !important;
+                                }
+
+                                #modal-body .justify-content-md-end {
+                                    -ms-flex-pack: end !important;
+                                    justify-content: flex-end !important;
+                                }
+
+                                #modal-body .col-md-2 {
+                                    -ms-flex: 0 0 16.666667%;
+                                    flex: 0 0 16.666667%;
+                                    max-width: 16.666667%;
+                                }
+
+                                #modal-body .col-md-4 {
+                                    -ms-flex: 0 0 33.333333%;
+                                    flex: 0 0 33.333333%;
+                                    max-width: 33.333333%;
+                                }
+
+                                #modal-body .col-md-5 {
+                                    -ms-flex: 0 0 41.666667%;
+                                    flex: 0 0 41.666667%;
+                                    max-width: 41.666667%;
+                                }
+
+                                #modal-body .col-md-6 {
+                                    -ms-flex: 0 0 50%;
+                                    flex: 0 0 50%;
+                                    max-width: 50%;
+                                }
+
+                                #modal-body .col-md-10 {
+                                    -ms-flex: 0 0 83.333333%;
+                                    flex: 0 0 83.333333%;
+                                    max-width: 83.333333%;
+                                }
+
+                                #modal-body .pl-md-3, #modal-body .px-md-3 {
+                                    padding-left: 1rem !important;
+                                }
+
+                                #modal-body .pr-md-3, #modal-body .px-md-3 {
+                                    padding-right: 1rem !important;
+                                }
+
+                                #modal-body .mb-md-0, #modal-body .my-md-0 {
+                                    margin-bottom: 0 !important;
+                                }
+
+                                #modal-body .mt-md-0, #modal-body .my-md-0 {
+                                    margin-top: 0 !important;
+                                }
+
+                                #modal-body .ml-md-5, #modal-body .mx-md-5 {
+                                    margin-left: 3rem !important;
+                                }
+
+                                #modal-body .d-md-none {
+                                    display: none !important;
+                                }
+
+                                #modal-body .d-md-flex {
+                                    display: -ms-flexbox !important;
+                                    display: flex !important;
+                                }
+
+                                #modal-body .d-md-inline {
+                                    display: inline !important;
+                                }
+
+                                #modal-body .brd-bot-line-reverse {
+                                    border-bottom: 1px solid #EAEAEA !important;
+                                }
+
+                                #modal-body .brd-bot-line {
+                                    border-bottom: none;
+                                }
+
+                                #modal-body .change-color-grey {
+                                    color: #232323 !important;
+                                }
+
+                                #modal-body .change-weight {
+                                    font-weight: 600;
+                                }
+                            }
+
+                            @media (min-width: 992px) {
+                                #modal-body .flex-lg-row {
+                                    -ms-flex-direction: row !important;
+                                    flex-direction: row !important;
+                                }
+
+                                #modal-body .justify-content-lg-start {
+                                    -ms-flex-pack: start !important;
+                                    justify-content: flex-start !important;
+                                }
+
+                                #modal-body .justify-content-lg-between {
+                                    -ms-flex-pack: justify !important;
+                                    justify-content: space-between !important;
+                                }
+
+                                #modal-body .justify-content-lg-end {
+                                    -ms-flex-pack: end !important;
+                                    justify-content: flex-end !important;
+                                }
+
+                                #modal-body .col-lg-2 {
+                                    -ms-flex: 0 0 16.666667%;
+                                    flex: 0 0 16.666667%;
+                                    max-width: 16.666667%;
+                                }
+
+                                #modal-body .col-lg-4 {
+                                    -ms-flex: 0 0 33.333333%;
+                                    flex: 0 0 33.333333%;
+                                    max-width: 33.333333%;
+                                }
+
+                                #modal-body .col-lg-5 {
+                                    -ms-flex: 0 0 41.666667%;
+                                    flex: 0 0 41.666667%;
+                                    max-width: 41.666667%;
+                                }
+
+                                #modal-body .col-lg-6 {
+                                    -ms-flex: 0 0 50%;
+                                    flex: 0 0 50%;
+                                    max-width: 50%;
+                                }
+
+                                #modal-body .col-lg-10 {
+                                    -ms-flex: 0 0 83.333333%;
+                                    flex: 0 0 83.333333%;
+                                    max-width: 83.333333%;
+                                }
+
+                                #modal-body .pl-lg-3, #modal-body .px-lg-3 {
+                                    padding-left: 1rem !important;
+                                }
+
+                                #modal-body .pr-lg-3, #modal-body .px-lg-3 {
+                                    padding-right: 1rem !important;
+                                }
+
+                                #modal-body .mb-lg-0, #modal-body .my-lg-0 {
+                                    margin-bottom: 0 !important;
+                                }
+
+                                #modal-body .mt-lg-0, #modal-body .my-lg-0 {
+                                    margin-top: 0 !important;
+                                }
+
+                                #modal-body .ml-lg-5, #modal-body .mx-lg-5 {
+                                    margin-left: 3rem !important;
+                                }
+
+                                #modal-body .d-lg-none {
+                                    display: none !important;
+                                }
+
+                                #modal-body .d-lg-flex {
+                                    display: -ms-flexbox !important;
+                                    display: flex !important;
+                                }
+
+                                #modal-body .d-lg-inline {
+                                    display: inline !important;
+                                }
+                            }
+
+                            #modal-body .order-active {
+                                background: #F1FFF1;
+                                border-left: 4px solid #36C233;
+                                font-weight: bold;
+                            }
+
+                            #modal-body .order-active__no-order {
+                                background: #FFF2F2;
+                                border-left: 4px solid #FF6666;
+                                font-weight: normal;
+                            }
+
+                            #modal-body .change-color-grey {
+                                color: #797979;
+                            }
+
+                            #modal-body .change-weight {
+                                font-weight: normal;
+                            }
+
+                            #modal-body .brd-bot-line {
+                                border-bottom: 1px solid #EAEAEA !important;
+                            }
+                        </style>
+
+
+                        <div id="modal-body" class=" modal-body week-details col-auto p-0 mt-2 ">
+                            <div class="col-12 d-flex flex-column px-0" id="modal-body">
+                                <div class="col-12 d-flex flex-lg-row flex-md-row flex-column">
+                                    <div class="col-lg-2 col-md-2 col-12 px-0 px-lg-3 px-md-3 d-flex"><img
+                                            src="https://kabachok.group/Pictures/GetPicture?id=180&amp;width=50&amp;height=50"
+                                            alt=""
+                                            style="width: inherit; max-width: 130px; max-height: 130px; margin-top: 10px">
+                                        <div class="col-7 d-md-none d-lg-none mt-3" style="color: #232323">
+                                            <div class="col-12 d-flex flex-column justify-content-start"
+                                                 style="max-height: 60px"><span class="font-weight-bold"
+                                                                                style="font-size: 14px;">Рахунок:</span>
+                                                <span style="font-family: Open-Sans, sans-serif; font-size: 16px;"> </span>
+                                            </div>
+                                            <div class="col-12 d-flex flex-column justify-content-end"
+                                                 style="max-height: 60px"><span class="font-weight-bold"
+                                                                                style="font-size: 14px;">Дата:</span>
+                                                <span style="font-family: Open-Sans, sans-serif;font-size: 16px; ">24.12.2021</span>
+                                            </div>
+                                            <div class="col-12 d-flex flex-column justify-content-end"
+                                                 style="max-height: 60px"><span class="font-weight-bold"
+                                                                                style="font-size: 14px;">Дитина:</span>
+                                                <span style="font-family: Open-Sans, sans-serif;font-size: 16px; "></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-10 col-lg-10 px-0 px-lg-3 px-md-3 d-flex flex-column mt-3 mt-lg-0 mt-md-0">
+                                        <div class="col-12 p-0 brd-bot-line d-flex flex-row justify-content-lg-between justify-content-md-between justify-content-center "
+                                             style="max-height: 100px">
+                                            <div class="col-4 col-md-5 col-lg-4 d-none flex-column d-md-flex d-lg-flex pb-2"
+                                                 style="color: #232323">
+                                                <div class="col-12 d-flex flex-row justify-content-between mb-3 mt-2"
+                                                     style="line-height: 22px; max-height: 22px"><span class="col-6 p-0"
+                                                                                                       style="font-size: 14px; color: #797979;">Рахунок:</span>
+                                                    <span class="col-6 p-0"
+                                                          style="font-family: Open-Sans, sans-serif; font-size: 16px;"> </span>
+                                                </div>
+                                                <div class="col-12 d-flex flex-row justify-content-between"
+                                                     style="line-height: 22px; max-height: 22px"><span class="col-6 p-0"
+                                                                                                       style="font-size: 14px; color: #797979;">Дата:</span>
+                                                    <span class="col-6 p-0"
+                                                          style="font-family: Open-Sans, sans-serif;font-size: 16px; ">24.12.2021</span>
+                                                </div>
+                                                <div class="col-12 d-flex flex-row justify-content-between"
+                                                     style="line-height: 22px; max-height: 22px"><span class="col-6 p-0"
+                                                                                                       style="font-size: 14px; color: #797979;">Дитина:</span>
+                                                    <span class="col-6 p-0"
+                                                          style="font-family: Open-Sans, sans-serif;font-size: 16px; "></span>
+                                                </div>
+                                            </div>
+                                            <button type="button"
+                                                    class="sendWeek btn btn-xl btn-outline-danger font-weight-bold col-12 col-sm-6 col-md-4 col-lg-4 d-flex justify-content-lg-start justify-content-md-start justify-content-around align-self-center mb-3 mb-lg-0 mb-md-0"
+                                                    style=" color: rgb(255, 255, 255); border-color: rgb(54, 194, 51); outline: none; height: 48px; background: rgb(54, 194, 51); display: flex; align-items: center; justify-content: space-evenly; font-size: 14px; text-transform: uppercase">
+                                                <img src="../img/mail-icon-report.svg" alt=""><span
+                                                    class="d-flex justify-content-center ml-4" style="">Надіслати на пошту</span>
+                                            </button>
+                                        </div>
+                                        <div class="brd-bot-line-reverse col-12 p-0 d-flex flex-column flex-md-row flex-lg-row ">
+                                            <div class="col-12 col-md-5 col-lg-5 d-flex flex-column pb-2 px-0 px-lg-3 px-md-3 "
+                                                 style="color: #232323">
+                                                <div class="col-12 d-flex flex-row justify-content-between mb-3 mt-2 px-0 px-lg-3 px-md-3"
+                                                     style="line-height: 22px; max-height: 22px"><span
+                                                        class="col-6 p-0 change-color-grey change-weight"
+                                                        style="font-size: 14px; color: #797979;">Кабачок л.берег</span>
+                                                    <span class="col-6 p-0"
+                                                          style="font-family: Open-Sans, sans-serif; font-size: 16px;"></span>
+                                                </div>
+                                                <div class="col-12 d-flex flex-row justify-content-between px-0 px-lg-3 px-md-3"
+                                                     style="line-height: 22px; max-height: 22px"><span
+                                                        class="col-6 p-0 change-color-grey change-weight"
+                                                        style="font-size: 14px; color: #797979;">Київ</span> <span
+                                                        class="col-6 p-0"
+                                                        style="font-family: Open-Sans, sans-serif;font-size: 16px; ">Киев</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column pb-2 ml-md-5 ml-lg-5 px-0 px-lg-3 px-md-3"
+                                                 style="color: #232323">
+                                                <div class="col-12 d-flex flex-row justify-content-between mb-3 mt-2 px-0 px-lg-3 px-md-3"
+                                                     style="line-height: 22px; max-height: 22px"><span
+                                                        class="col-6 p-0 change-color-grey change-weight"
+                                                        style="font-size: 14px;">Україна</span> <span class="col-6 p-0"
+                                                                                                      style="font-family: Open-Sans, sans-serif; font-size: 16px;">UA</span>
+                                                </div>
+                                                <div class="col-12 d-flex flex-row justify-content-between px-0 px-lg-3 px-md-3"
+                                                     style="line-height: 22px; max-height: 22px"><span
+                                                        class="col-6 p-0 change-color-grey change-weight"
+                                                        style="font-size: 14px;">Київ, Лівий берег</span> <span
+                                                        class="col-6 p-0"
+                                                        style="font-family: Open-Sans, sans-serif;font-size: 16px; ">Позняковская 43</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ml-0 mr-0 justify-content-start w-100 align-content-center d-lg-flex d-none d-md-flex d-sm-none mt-5"
+                                     style="height: 40px; font-weight: 500; font-size: 18px; color: #232323; background: #F7F7F7;">
+                                    <div class="col-12 d-flex">
+                                        <div class="col-2" style="cursor: pointer"><span>Код</span></div>
+                                        <div class="col-4" style="cursor: pointer"><span>Назва</span></div>
+                                        <div class="col-2" style="cursor: pointer"><span>Кількість</span></div>
+                                        <div class="col-2" style="cursor: pointer"><span>Вартiсть (₴)</span></div>
+                                        <div class="col-2" style="cursor: pointer"><span>Сума (₴)</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 d-flex flex-column px-0">
+                                    <div class="col-12 d-flex flex-column px-0">
+                                        <div class="col-12 my-3 px-0 px-lg-3 px-md-3"><span class="px-3"
+                                                                                            style="font-weight: 600; font-size: 18px; line-height: 21px; color: #232323">понеділок 29</span>
+                                        </div>
+
+                                        <div class="col-12 px-0 order-active order-active__no-order"
+                                             style="max-height: 51px">
+                                            <div class="col-12 d-flex align-items-center px-0 px-lg-3 px-md-3"
+                                                 style="height: 51px"><span class="px-3"
+                                                                            style="font-family: Open-Sans, sans-serif; font-size: 16px; color: #232323;">Немає замовлень</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex flex-column px-0">
+                                    <div class="col-12 d-flex flex-column px-0">
+                                        <div class="col-12 my-3 px-0 px-lg-3 px-md-3"><span class="px-3"
+                                                                                            style="font-weight: 600; font-size: 22px; line-height: 21px; color: #232323">вівторок 30</span>
+                                        </div>
+
+                                        <div class="col-12 px-0 order-active order-active__no-order"
+                                             style="max-height: 51px">
+                                            <div class="col-12 d-flex align-items-center px-0 px-lg-3 px-md-3"
+                                                 style="height: 51px"><span class="px-3"
+                                                                            style="font-family: Open-Sans, sans-serif; font-size: 16px; color: #232323;">Немає замовлень</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex flex-column px-0">
+                                    <div class="col-12 d-flex flex-column px-0">
+                                        <div class="col-12 my-3 px-0 px-lg-3 px-md-3"><span class="px-3"
+                                                                                            style="font-weight: 600; font-size: 22px; line-height: 21px; color: #232323">середа 1</span>
+                                        </div>
+
+                                        <div class="col-12 px-0 order-active order-active__no-order"
+                                             style="max-height: 51px">
+                                            <div class="col-12 d-flex align-items-center px-0 px-lg-3 px-md-3"
+                                                 style="height: 51px"><span class="px-3"
+                                                                            style="font-family: Open-Sans, sans-serif; font-size: 16px; color: #232323;">Немає замовлень</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex flex-column px-0">
+                                    <div class="col-12 d-flex flex-column px-0">
+                                        <div class="col-12 my-3 px-0 px-lg-3 px-md-3">
+                                            <span class="px-3" style="font-weight: 600; font-size: 22px; line-height: 21px; color: #232323">четвер 2</span>
+                                        </div>
+
+                                        <div class="col-12 my-3 px-0 px-lg-3 px-md-3"> <span class="px-3"
+                                                                                             style="font-weight: 600; font-size: 18px; line-height: 21px; color: #232323">
+ Сніданок
+ </span></div>
+                                        <div class="day-table open">
+                                            <div class="day-table__head">
+                                                <div class="col-12 px-0 py-1">
+                                                    <div class="col-12 d-flex align-items-center px-0 px-lg-3 px-md-3">
+                                                        <div class="col-12 d-flex px-0 flex-md-row flex-lg-row flex-row flex-wrap"
+                                                             style="font-size: 18px">
+                                                            <div class=" col-md-2 col-lg-2 col-12 flex-row  my-1  d-none d-md-block d-lg-block"
+                                                                 style=" font-family: Open-Sans, sans-serif"><span
+                                                                    class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                    style="font-size: 14px; font-weight: bold">Код</span>
+                                                                <span></span></div>
+                                                            <div class=" col-md-4 col-lg-4 col-12 flex-row d-flex my-1">
+                                                                <span
+                                                                    class="col-12  p-0 pl-2 pl-md-0 pl-lg-0 col-md-6 cold-lg-6d-md-none d-lg-none d-none"
+                                                                    style="font-size: 14px; font-weight: bold">Назва</span>
+                                                                <span>Breakfast Standard STh2</span></div>
+                                                            <div class=" col-md-2 col-lg-2 col-4 flex-column d-flex my-1"><span
+                                                                    class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                    style="font-size: 14px; font-weight: bold">Кількість</span>
+                                                                <span style=" font-family: Open-Sans, sans-serif"
+                                                                      id="order-amount">1</span></div>
+                                                            <div class="col-md-2 col-lg-2 col-4 flex-column d-flex my-1"><span
+                                                                    class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                    style="font-size: 14px; font-weight: bold">Вартiсть (₴)</span>
+                                                                <span style=" font-family: Open-Sans, sans-serif"
+                                                                      id="order-price"> 55,00</span></div>
+                                                            <div class="col-md-2 col-lg-2 col-4 flex-column d-flex my-1 d-flex justify-content-lg-end justify-content-md-end">
+                                                        <span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                              style="font-size: 14px; font-weight: bold">Сума (₴)</span>
+                                                                <span style=" font-family: Open-Sans, sans-serif" class=""
+                                                                      id="total-order-price"> 55,00</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="hidden-table">
+                                                <div class="col-12 d-flex px-0 flex-row align-items-center"
+                                                     style="font-size: 18px; border-top: 1px solid #eaeaea; border-bottom:1px solid #eaeaea; ">
+                                                    <div class=" col-md-2 col-lg-2 col-3 flex-row d-flex my-1 align-self-start"
+                                                         style=" font-family: Open-Sans, sans-serif"><img
+                                                            src="https://kabachok.group/Pictures/GetPicture?id=3702&amp;width=50&amp;height=50"
+                                                            alt="" style="width: 50%"></div>
+                                                    <div class=" col-md-4 col-lg-4 col-5 flex-row d-flex my-1"> <span>Какао (m)</span>
+                                                    </div>
+                                                    <div class=" col-md-2 col-lg-2 col-4 flex-row d-flex my-1"> <span
+                                                            style=" font-family: Open-Sans, sans-serif">1</span></div>
+                                                    <div class="col-4"></div>
+                                                </div>
+                                                <div class="col-12 d-flex px-0 flex-row align-items-center"
+                                                     style="font-size: 18px; border-top: 1px solid #eaeaea; border-bottom:1px solid #eaeaea; ">
+                                                    <div class=" col-md-2 col-lg-2 col-3 flex-row d-flex my-1 align-self-start"
+                                                         style=" font-family: Open-Sans, sans-serif"><img
+                                                            src="https://kabachok.group/Pictures/GetPicture?id=3646&amp;width=50&amp;height=50"
+                                                            alt="" style="width: 50%"></div>
+                                                    <div class=" col-md-4 col-lg-4 col-5 flex-row d-flex my-1"> <span>Сендвіч шкільний (m)</span>
+                                                    </div>
+                                                    <div class=" col-md-2 col-lg-2 col-4 flex-row d-flex my-1"><span
+                                                            style=" font-family: Open-Sans, sans-serif">1</span></div>
+                                                    <div class="col-4"></div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-12 my-3 px-0 px-lg-3 px-md-3"> <span class="px-3"
+                                                                                             style="font-weight: 600; font-size: 18px; line-height: 21px; color: #232323">
+ Обід
+ </span></div>
+                                        <div class="day-table ">
+                                            <div class="day-table__head">
+                                                <div class="col-12 px-0 py-1">
+                                                    <div class="col-12 d-flex align-items-center px-0 px-lg-3 px-md-3">
+                                                        <div class="col-12 d-flex px-0 flex-md-row flex-lg-row flex-row flex-wrap"
+                                                             style="font-size: 18px">
+                                                            <div class=" col-md-2 col-lg-2 col-12 flex-row d-flex my-1 d-lg-block d-none d-md-block"
+                                                                 style=" font-family: Open-Sans, sans-serif"><span
+                                                                    class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                    style="font-size: 14px; font-weight: bold">Код</span>
+                                                                <span></span></div>
+                                                            <div class=" col-md-4 col-lg-4 col-12 flex-row d-flex my-1">
+                                                                <span
+                                                                        class="col-12  p-0 pl-2 pl-md-0 pl-lg-0 col-md-6 cold-lg-6d-md-none d-lg-none d-none"
+                                                                        style="font-size: 14px; font-weight: bold">Назва</span>
+                                                                <span>Breakfast Standard STh2</span></div>
+                                                            <div class=" col-md-2 col-lg-2 col-4 flex-column d-flex my-1"><span
+                                                                    class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                    style="font-size: 14px; font-weight: bold">Кількість</span>
+                                                                <span style=" font-family: Open-Sans, sans-serif"
+                                                                      id="order-amount">1</span></div>
+                                                            <div class="col-md-2 col-lg-2 col-4 flex-column d-flex my-1"><span
+                                                                    class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                    style="font-size: 14px; font-weight: bold">Вартiсть (₴)</span>
+                                                                <span style=" font-family: Open-Sans, sans-serif"
+                                                                      id="order-price"> 55,00</span></div>
+                                                            <div class="col-md-2 col-lg-2 col-4 flex-column d-flex my-1 d-flex justify-content-lg-end justify-content-md-end">
+                                                        <span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                              style="font-size: 14px; font-weight: bold">Сума (₴)</span>
+                                                                <span style=" font-family: Open-Sans, sans-serif" class=""
+                                                                      id="total-order-price"> 55,00</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="hidden-table">
+                                                <div class="col-12 d-flex px-0 flex-row align-items-center"
+                                                     style="font-size: 18px; border-top: 1px solid #eaeaea; border-bottom:1px solid #eaeaea; ">
+                                                    <div class=" col-md-2 col-lg-2 col-3 flex-row d-flex my-1 align-self-start"
+                                                         style=" font-family: Open-Sans, sans-serif"><img
+                                                            src="https://kabachok.group/Pictures/GetPicture?id=3702&amp;width=50&amp;height=50"
+                                                            alt="" style="width: 50%"></div>
+                                                    <div class=" col-md-4 col-lg-4 col-5 flex-row d-flex my-1"> <span>Какао (m)</span>
+                                                    </div>
+                                                    <div class=" col-md-2 col-lg-2 col-4 flex-row d-flex my-1"> <span
+                                                            style=" font-family: Open-Sans, sans-serif">1</span></div>
+                                                    <div class="col-4"></div>
+                                                </div>
+                                                <div class="col-12 d-flex px-0 flex-row align-items-center"
+                                                     style="font-size: 18px; border-top: 1px solid #eaeaea; border-bottom:1px solid #eaeaea; ">
+                                                    <div class=" col-md-2 col-lg-2 col-3 flex-row d-flex my-1 align-self-start"
+                                                         style=" font-family: Open-Sans, sans-serif"><img
+                                                            src="https://kabachok.group/Pictures/GetPicture?id=3646&amp;width=50&amp;height=50"
+                                                            alt="" style="width: 50%"></div>
+                                                    <div class=" col-md-4 col-lg-4 col-5 flex-row d-flex my-1"> <span>Сендвіч шкільний (m)</span>
+                                                    </div>
+                                                    <div class=" col-md-2 col-lg-2 col-4 flex-row d-flex my-1"><span
+                                                            style=" font-family: Open-Sans, sans-serif">1</span></div>
+                                                    <div class="col-4"></div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="day-table ">
+                                            <div class="day-table__head">
+                                                <div class="col-12 px-0 py-1">
+                                                    <div class="col-12 d-flex align-items-center px-0 px-lg-3 px-md-3">
+                                                        <div class="col-12 d-flex px-0 flex-md-row flex-lg-row flex-row flex-wrap"
+                                                             style="font-size: 18px">
+                                                            <div class=" col-md-2 col-lg-2 col-12 flex-row d-flex my-1 d-lg-block d-none d-md-block"
+                                                                 style=" font-family: Open-Sans, sans-serif"><span
+                                                                    class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                    style="font-size: 14px; font-weight: bold">Код</span>
+                                                                <span></span></div>
+                                                            <div class=" col-md-4 col-lg-4 col-12 flex-row d-flex my-1">
+                                                                <span
+                                                                        class="col-12  p-0 pl-2 pl-md-0 pl-lg-0 col-md-6 cold-lg-6d-md-none d-lg-none d-none"
+                                                                        style="font-size: 14px; font-weight: bold">Назва</span>
+                                                                <span>Breakfast Standard STh2</span></div>
+                                                            <div class=" col-md-2 col-lg-2 col-4 flex-column d-flex my-1"><span
+                                                                    class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                    style="font-size: 14px; font-weight: bold">Кількість</span>
+                                                                <span style=" font-family: Open-Sans, sans-serif"
+                                                                      id="order-amount">1</span></div>
+                                                            <div class="col-md-2 col-lg-2 col-4 flex-column d-flex my-1"><span
+                                                                    class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                    style="font-size: 14px; font-weight: bold">Вартiсть (₴)</span>
+                                                                <span style=" font-family: Open-Sans, sans-serif"
+                                                                      id="order-price"> 55,00</span></div>
+                                                            <div class="col-md-2 col-lg-2 col-4 flex-column d-flex my-1 d-flex justify-content-lg-end justify-content-md-end">
+                                                        <span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                              style="font-size: 14px; font-weight: bold">Сума (₴)</span>
+                                                                <span style=" font-family: Open-Sans, sans-serif" class=""
+                                                                      id="total-order-price"> 55,00</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="hidden-table">
+                                                <div class="col-12 d-flex px-0 flex-row align-items-center"
+                                                     style="font-size: 18px; border-top: 1px solid #eaeaea; border-bottom:1px solid #eaeaea; ">
+                                                    <div class=" col-md-2 col-lg-2 col-3 flex-row d-flex my-1 align-self-start"
+                                                         style=" font-family: Open-Sans, sans-serif"><img
+                                                            src="https://kabachok.group/Pictures/GetPicture?id=3702&amp;width=50&amp;height=50"
+                                                            alt="" style="width: 50%"></div>
+                                                    <div class=" col-md-4 col-lg-4 col-5 flex-row d-flex my-1"> <span>Какао (m)</span>
+                                                    </div>
+                                                    <div class=" col-md-2 col-lg-2 col-4 flex-row d-flex my-1"> <span
+                                                            style=" font-family: Open-Sans, sans-serif">1</span></div>
+                                                    <div class="col-4"></div>
+                                                </div>
+                                                <div class="col-12 d-flex px-0 flex-row align-items-center"
+                                                     style="font-size: 18px; border-top: 1px solid #eaeaea; border-bottom:1px solid #eaeaea; ">
+                                                    <div class=" col-md-2 col-lg-2 col-3 flex-row d-flex my-1 align-self-start"
+                                                         style=" font-family: Open-Sans, sans-serif"><img
+                                                            src="https://kabachok.group/Pictures/GetPicture?id=3646&amp;width=50&amp;height=50"
+                                                            alt="" style="width: 50%"></div>
+                                                    <div class=" col-md-4 col-lg-4 col-5 flex-row d-flex my-1"> <span>Сендвіч шкільний (m)</span>
+                                                    </div>
+                                                    <div class=" col-md-2 col-lg-2 col-4 flex-row d-flex my-1"><span
+                                                            style=" font-family: Open-Sans, sans-serif">1</span></div>
+                                                    <div class="col-4"></div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-12 my-3 px-0 px-lg-3 px-md-3"> <span class="px-3"
+                                                                                             style="font-weight: 600; font-size: 18px; line-height: 21px; color: #232323">
+ Підвечірок
+ </span></div>
+
+                                        <div class="day-table ">
+                                            <div class="day-table__head">
+                                                <div class="col-12 px-0 py-1">
+                                                    <div class="col-12 d-flex align-items-center px-0 px-lg-3 px-md-3">
+                                                        <div class="col-12 d-flex px-0 flex-md-row flex-lg-row flex-row flex-wrap"
+                                                             style="font-size: 18px">
+                                                            <div class=" col-md-2 col-lg-2 col-12 flex-row d-flex my-1 d-lg-block d-none d-md-block"
+                                                                 style=" font-family: Open-Sans, sans-serif"><span
+                                                                    class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                    style="font-size: 14px; font-weight: bold">Код</span>
+                                                                <span></span></div>
+                                                            <div class=" col-md-4 col-lg-4 col-12 flex-row d-flex my-1">
+                                                                <span
+                                                                        class="col-12  p-0 pl-2 pl-md-0 pl-lg-0 col-md-6 cold-lg-6d-md-none d-lg-none d-none"
+                                                                        style="font-size: 14px; font-weight: bold">Назва</span>
+                                                                <span>Breakfast Standard STh2</span></div>
+                                                            <div class=" col-md-2 col-lg-2 col-4 flex-column d-flex my-1"><span
+                                                                    class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                    style="font-size: 14px; font-weight: bold">Кількість</span>
+                                                                <span style=" font-family: Open-Sans, sans-serif"
+                                                                      id="order-amount">1</span></div>
+                                                            <div class="col-md-2 col-lg-2 col-4 flex-column d-flex my-1"><span
+                                                                    class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                                    style="font-size: 14px; font-weight: bold">Вартiсть (₴)</span>
+                                                                <span style=" font-family: Open-Sans, sans-serif"
+                                                                      id="order-price"> 55,00</span></div>
+                                                            <div class="col-md-2 col-lg-2 col-4 flex-column d-flex my-1 d-flex justify-content-lg-end justify-content-md-end">
+                                                        <span class="col-6 p-0 d-md-none d-lg-none d-inline"
+                                                              style="font-size: 14px; font-weight: bold">Сума (₴)</span>
+                                                                <span style=" font-family: Open-Sans, sans-serif" class=""
+                                                                      id="total-order-price"> 55,00</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="hidden-table">
+                                                <div class="col-12 d-flex px-0 flex-row align-items-center"
+                                                     style="font-size: 18px; border-top: 1px solid #eaeaea; border-bottom:1px solid #eaeaea; ">
+                                                    <div class=" col-md-2 col-lg-2 col-3 flex-row d-flex my-1 align-self-start"
+                                                         style=" font-family: Open-Sans, sans-serif"><img
+                                                            src="https://kabachok.group/Pictures/GetPicture?id=3702&amp;width=50&amp;height=50"
+                                                            alt="" style="width: 50%"></div>
+                                                    <div class=" col-md-4 col-lg-4 col-5 flex-row d-flex my-1"> <span>Какао (m)</span>
+                                                    </div>
+                                                    <div class=" col-md-2 col-lg-2 col-4 flex-row d-flex my-1"> <span
+                                                            style=" font-family: Open-Sans, sans-serif">1</span></div>
+                                                    <div class="col-4"></div>
+                                                </div>
+                                                <div class="col-12 d-flex px-0 flex-row align-items-center"
+                                                     style="font-size: 18px; border-top: 1px solid #eaeaea; border-bottom:1px solid #eaeaea; ">
+                                                    <div class=" col-md-2 col-lg-2 col-3 flex-row d-flex my-1 align-self-start"
+                                                         style=" font-family: Open-Sans, sans-serif"><img
+                                                            src="https://kabachok.group/Pictures/GetPicture?id=3646&amp;width=50&amp;height=50"
+                                                            alt="" style="width: 50%"></div>
+                                                    <div class=" col-md-4 col-lg-4 col-5 flex-row d-flex my-1"> <span>Сендвіч шкільний (m)</span>
+                                                    </div>
+                                                    <div class=" col-md-2 col-lg-2 col-4 flex-row d-flex my-1"><span
+                                                            style=" font-family: Open-Sans, sans-serif">1</span></div>
+                                                    <div class="col-4"></div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="modal-footer" style="height: 82px;">
+                    <button id="btnyes" type="button" class="btn btn-primary">Tak</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script crossorigin="" src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.0/umd/react.development.js"></script>
+<script crossorigin=""
+        src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.0/umd/react-dom.development.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.7.1/remarkable.min.js"></script>
+
+
+<script>
+    $(function () {
+
+        //setup_change_company();
+        setup_changechield();
+        setup_changecompany();
+
+    });
+
+    function setup_changechield() {
+        $("#changechield,#changechield-1").click(function (e) {
+            var url = '/Account/UserChilds';
+            var self = this;
+            $.get(url, function (data) {
+                var dialog = $(data);
+                $("body").append(dialog);// $('#moddialogyesno');
+                // var dialog = $('#moddialogyesno').dialog();
+                dialog.modal('show');
+                dialog.on('hide.bs.modal', function (e) {
+                    dialog.empty();
+
+                });
+                dialog.find(".role-item").click(function (e) {
+                    e.preventDefault();
+                    if (!$(this).hasClass('active')) {
+                        dialog.find(".role-item").removeClass('active');
+                        $(this).addClass('active')
+                    }
+                });
+                dialog.find("#selectchild").click(function (e) {
+                    e.preventDefault();
+                    var userid = dialog.find(".role-item.active").attr("data-id");
+                    var token = dialog.find("[name='__RequestVerificationToken'").val();
+
+                    var currentUser = dialog.find(".role-item.active").attr("data-cur");
+                    if (currentUser == 'true')
+                        return;
+                    $.ajax({
+                        type: "POST",
+                        data: {UserId: userid, __RequestVerificationToken: token},
+
+                        url: "/Account/ChangeUserChild",
+                        success: function (data) {
+                            dialog.modal('hide');
+                            var getUrl = window.location;
+                            var baseUrl = getUrl.protocol + "//" + getUrl.host;
+                            window.location.href = baseUrl;
+                        }
+                    })
+                        .fail(function (jqXHR, textStatus, errorThrown) {
+                            dialog_error(errorThrown);
+                        });
+
+                });
+
+            })
+                .fail(function (xhr, status, error) {
+
+                });
+        });
+    }
+
+    function setup_changecompany() {
+        $("#selectcompany,#selectcompany-1").click(function (e) {
+            var id = $(this).attr("data-userid");
+            var url = '/Account/CompaniesForUser?userId=' + id;
+            var self = this;
+            $.get(url, function (data) {
+                var dialog = $(data);
+                $("body").append(dialog);// $('#moddialogyesno');
+                // var dialog = $('#moddialogyesno').dialog();
+                dialog.modal('show');
+                dialog.on('hide.bs.modal', function (e) {
+                    dialog.empty();
+
+                });
+                dialog.find(".company-item").click(function (e) {
+                    e.preventDefault();
+                    if (!$(this).hasClass('active')) {
+                        dialog.find(".company-item").removeClass('active');
+                        $(this).addClass('active')
+                    }
+                });
+                dialog.find("#selectcompany").click(function (e) {
+                    e.preventDefault();
+                    var companyid = dialog.find(".company-item.active").attr("data-id");
+                    var token = dialog.find("[name='__RequestVerificationToken'").val();
+
+                    var currentUser = dialog.find(".company-item.active").attr("data-cur");
+                    if (currentUser == 'true')
+                        return;
+                    $.ajax({
+                        type: "POST",
+                        data: {CompanyId: companyid, __RequestVerificationToken: token},
+
+                        url: "/Account/SetCompanyId",
+                        success: function (data) {
+                            dialog.modal('hide');
+                            var getUrl = window.location;
+                            var baseUrl = getUrl.protocol + "//" + getUrl.host;
+                            window.location.href = baseUrl;
+                        }
+                    })
+                        .fail(function (jqXHR, textStatus, errorThrown) {
+                            dialog_error(errorThrown);
+                        });
+
+                });
+
+            })
+                .fail(function (xhr, status, error) {
+
+                });
+        });
+    }
+</script>
+<!--new script-->
+<script>
+    $('body').on('click','.day-table__head',function(){
+        $(this).closest('.day-table').toggleClass('open');
+    });
+
+</script>
+<!--new script-->
+
+<script src="./rjs/modaldialog.jsx"></script>
+<script type="module" src="./rjs/myorder.jsx"></script>
+
+
+</body>
+</html>
