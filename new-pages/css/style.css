@@ -2273,6 +2273,9 @@ footer {
     #modal-body .day-table__head div.d-none {
         display: block !important;
     }
+    #total-order-price {
+        text-align: right;
+    }
 }
 @media screen and (max-width: 575px) {
     #modal-body .day-table__head .col-4 > span {
