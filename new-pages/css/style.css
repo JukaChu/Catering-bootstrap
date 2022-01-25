@@ -2127,14 +2127,12 @@ footer {
 .complex-dish-item-container .col-lg-11 .col-lg-2 {
     justify-content: center !important;
 }
-#content {
-    margin-bottom: 40px;
-}
+
 @media screen and (min-width: 768px) {
     .modal.show {
         background: rgba(200, 200, 200, 0.8);
         display: flex !important;
-        /*align-items: center;*/
+        align-items: center;
     }
     .modal .modal-dialog {
         min-width: 0 !important;
@@ -2260,62 +2258,7 @@ footer {
     max-height: 0;
     overflow: hidden;
 }
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    width: 20px !important;
-    height: 20px !important;
-}
-#current-day-cart {
-
-}
-
-.current-day-cart__text span{
-    display: inline-block;
-    font-size: 16px !important;
-    font-weight: 500 !important;
-
-}
-.current-day-cart__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 4px 30px !important;
-    position: relative;
-}
-.current-day-cart__btn > div {
-    padding: 0 !important;
-}
-.current-day-cart__btn .hide-cart {
-    flex-direction: row !important;
-    align-self: center !important;
-    margin-left: 6px !important;
-
-}
-.current-day-cart__btn .hide-cart > div:last-child svg {
-    position: absolute;
-    top: 50%;
-    right: 5px;
-    transform: translate(0, -50%);
-}
-
-@media (min-width: 576px) {
-    .col-sm-2 {
-        -ms-flex: 0 0 16.666667%;
-        flex: 0 0 16.666667%;
-        max-width: 16.666667%;
-    }
-}
 @media screen and (max-width: 767px) {
-    .amount-of-complex {
-        position: absolute;
-        right: 0;
-        bottom: 100%;
-    }
-    .complex-dish-item-container .col-lg-11 .col-lg-2 {
-        justify-content: flex-start !important;
-    }
-    .checkmark-for-radio {
-        top: -25px;
-    }
     #modal-body .day-table__head .pl-md-0 ~ span{
         padding-left: 30px !important;
         box-sizing: border-box;
@@ -2325,36 +2268,16 @@ footer {
         top: 14px;
         left: 16px;
     }
-    .complex-dish-item-container {
-        position: relative;
-        /*padding-top: 50px !important;*/
-
-    }
-    .complex-dish-item-container > div {
-        /*position: static;*/
-    }
-    #cart-for-hide #dinner-container .bolder-change {
-        padding-left: 0;
-    }
 }
 @media screen and (min-width: 768px) {
     #modal-body .day-table__head div.d-none {
         display: block !important;
     }
-
+    #total-order-price {
+        text-align: right;
+    }
 }
 @media screen and (max-width: 575px) {
-    #cart-for-hide .font-weight-bold {
-        font-size: 15px !important;
-
-    }
-    #total-amount {
-        font-size: 16px !important;
-    }
-    .current-day-cart__btn {
-        width: 100% !important;
-        margin: 8px 0 !important;
-    }
     #modal-body .day-table__head .col-4 > span {
         flex: auto;
     }
