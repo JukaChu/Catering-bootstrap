@@ -2370,5 +2370,27 @@ footer {
         font-size: 12px !important;
         margin-top: 6px;
     }
+    .footer .nav .nav-link {
+        font-size: 12px !important;
+    }
+    .footer .nav .nav-link ~ .px-3 {
+        padding-left: 6px !important;
+        padding-right: 6px !important;
+    }
+
+}
+@media screen and (max-width: 360px) {
+    .footer .container {
+        padding: 6px 9px !important;
+    }
+    .footer .nav .col-12 {
+        font-size: 11px !important;
+        margin-top: 5px;
+    }
+    .footer .nav .col-12 img {
+        width: 12px !important;
+        height: auto;
+        margin-right: 4px !important;
+    }
 }
 /*footer style*/
