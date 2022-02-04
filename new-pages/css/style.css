@@ -2362,3 +2362,13 @@ footer {
         width: 100% !important;
     }
 }
+
+
+/*footer style*/
+@media screen and (max-width: 767px) {
+    .footer .nav .col-12 {
+        font-size: 12px !important;
+        margin-top: 6px;
+    }
+}
+/*footer style*/
